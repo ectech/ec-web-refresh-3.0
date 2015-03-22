@@ -24,3 +24,23 @@ hr.style-one {
     background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
     background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
 }
+
+#bgdiv {
+    
+  /*width: 200px;*/
+  height: 400px;
+  display: block;
+  position: relative;
+}
+
+#bgdiv::after {
+  content: "";
+  background: url(../images/office/office-smartphone.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
