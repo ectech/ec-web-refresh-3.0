@@ -44,3 +44,28 @@ hr.style-one {
   position: absolute;
   z-index: -1;   
 }
+
+@font-face {
+    font-family: 'EkMukta';
+
+    src: url('../fonts/Ek_Mukta/EkMukta-Regular.ttf') format('truetype');
+    src: url('../fonts/Ek_Mukta/EkMukta-Medium.ttf') format('truetype');
+    src: url('../fonts/Ek_Mukta/EkMukta-Bold.ttf') format('truetype');
+
+    src: url('../fonts/Ek_Mukta/EkMukta-Light.ttf') format('truetype');
+    src: url('../fonts/Ek_Mukta/EkMukta-SemiBold.ttf') format('truetype');
+    src: url('../fonts/Ek_Mukta/EkMukta-ExtraBold.ttf') format('truetype');
+    src: url('../fonts/Ek_Mukta/EkMukta-ExtraLight.ttf') format('truetype');
+}
+.ectext {
+    font-family: 'EkMukta';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+.text-bold {
+  font-weight: bold;
+}
