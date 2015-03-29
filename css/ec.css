@@ -367,6 +367,41 @@ section#from-the-blog a.button-box {
     width: 370px;
 }
 
+/******** FOOTER **********/
+
+section#footer {
+    background-color: #46555f;    
+}
+
+section#footer a, section#footer a:link, section#footer a:visited, section#footer a:hover {
+    color: white;   
+    border-bottom: 1px solid white;
+    text-decoration:none;
+}
+
+section#footer ul {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+section#footer ul li {
+    float:left;
+    margin: 0 15px 15px;    
+}
+
+section#footer a img {
+
+    float: right;
+    margin-right: 15px;
+}
+
+.img-link {
+    text-decoration: none;
+}
 /*********** HELPERS ************/
 
 .text-underline {
