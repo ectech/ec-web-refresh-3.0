@@ -11,6 +11,8 @@
     src: url('../fonts/Ek_Mukta/EkMukta-ExtraLight.ttf') format('truetype');
 } */
 
+
+
 @font-face {
     font-family: 'EkMukta';
     src: url('../fonts/Ek_Mukta/EkMukta-Regular.ttf') format('truetype');
@@ -34,7 +36,7 @@
 .ectext {
     font-family: 'EkMukta';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 100;
 }
 
 .translucent {
@@ -106,42 +108,89 @@ a.orange {
 p {
     font-size: 28px; 
     line-height: 44px;
+    margin-top: 20px;
 }
 
 section {
     font-family: 'EkMukta';
     font-weight: 100; 
     -webkit-font-smoothing: antialiased;
-    padding: 80px 0;   
+    padding: 80px 0;  
+    width: 100%;
 }
 
 .row {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 60px;
     text-align: center;
 }
 
 blockquote {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+    border: none;   
     color:#fff; 
-    padding: 55px 100px;
-    margin:90px 0;
+    padding: 55px 100px 65px;
+    margin: 120px 0 150px;
     font-size: 70px;
     font-weight: 300;
     line-height: 80px;
-    clip-path: inset(10px 20px 30px 40px);
+    /* clip-path: inset(10px 20px 30px 40px); */
     -webkit-font-smoothing: antialiased;
 }
 
 
+
+@media only screen and (max-width: 768px) {
+}
+
+#content {
+    position: relative;
+    z-index: 1001;
+    top: 810px;
+    background-color: white;
+}
+
 /********** TOP SECTION *********/
 
 section#top {
-    padding-top: 40px;
+    position: fixed;
+    padding-top: 45px;
     text-align:center;
     background: url(../images/home-masthead-gray-image.jpg) no-repeat top center fixed;
     background-size: cover;
+    z-index: -100;
+    
+}
+
+section#top a.eclogo img {
+    display:inline-block;
+    width:295px;
+    height: 52px;
+    float: left;
+    background: url(../images/logo_ec_white.png) no-repeat top left;
+}
+
+@media only screen and (max-width: 1150px) {
+    section#top a.eclogo img {
+        width:70px;  
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    blockquote {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    section#top ul li.cta {
+        display:none;
+    }
+    blockquote {
+        font-size: 55px;
+        line-height: 65px;
+    } 
 }
 
 section#top .row img {
@@ -150,41 +199,64 @@ section#top .row img {
 section#top ul {
     float:right;
     color: #fff;
-    margin-top: 4px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    list-style: none;
 }
 
 section#top ul li {
     float:left;
-    color: #fff;
     padding: 8px;
     margin-left: 10px;
-    text-decoration: none;
-    list-style: none;
-    font-size: 18px;
 }
 
 section#top ul li.cta {
     border: 1px solid white;
     margin-left: 18px;
     text-transform: uppercase;
-    font-weight:800;
+    font-weight:600;
     padding: 8px 11px;
     font-size: 16px;
+}
+
+section#top div.hamburger {
+    float:right;   
+    color: white;
+    border: 3px solid white;
+    height: 50px;
+    width: 50px;
+    padding: 20px 20px;
+    display: none;
+}
+
+section#top div.row img.star {
+    position:relative;
+    top:-165px; 
+    clear:both; 
+    margin:0; 
+    float:none;  
+}
+
+@media only screen and (max-width: 690px) {
+    section#top ul {
+        display:none;
+    }   
+    section#top div.hamburger {
+        display:block;   
+    }
 }
 
 /********** OUR PROMISE *********/
 
 section#promise {
+    top: 800px;
     background-color: #f15c22; 
     color: #fff;
     font-size: 20px;
-    font-family: 'EkMukta';
 }
 
-section#promise p {
-    margin-top: 10px;
-    padding-right: 30px;
-}
 
 section#promise img {
     margin: 0 0 25px;   
@@ -203,7 +275,7 @@ section#our-offerings {
 
 section#our-offerings ul {
     color:white;
-    margin: 30px 0 0 0;
+    margin: 30px 0 50px 0;
     padding:0;
 }
 section#our-offerings ul li {
@@ -235,10 +307,6 @@ section#our-clients div  {
     color: #515151;
 }
 
-section#our-clients p  {
-    margin: 30px 0 0;
-    padding: 0 50px;
-}
 
 section#our-clients a.button-box {
     width: 350px;
@@ -247,7 +315,7 @@ section#our-clients a.button-box {
 /******** HUNGRY SECTION **********/
 
 section#hungry  {
-    background: #f15c22 url(../images/office/photo-girl-working-at-desk-wide.jpg) repeat-y top right;
+    background: #f15c22 url(../images/office/photo-girl-working-at-desk-wide.jpg) repeat-y top right; 
     color: #fff;
     padding: 0;
 }
