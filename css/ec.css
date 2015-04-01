@@ -159,7 +159,10 @@ section#top {
     text-align:center;
     background: url(../images/home-masthead-gray-image.jpg) no-repeat top center fixed;
     background-size: cover;
-    z-index: -100;
+    /* 
+    Commented out because it was disabling the links -- not sure it's needed.
+    z-index: -100; 
+    */
     
 }
 
