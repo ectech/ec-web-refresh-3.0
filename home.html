@@ -60,12 +60,17 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" class="ectext">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="ectext">
+
   <!-- Affix Banner - hidden until scrolled down -->
-    <header id="nav">
-        <div class="row">
+    <div data-spy="affix" data-offset-top="0" data-offset-bottom="200" style="background-color: blue;">
+      Testing
+    </div>
+  <!-- Welcome banner -->
+  <section id="top" class="container-fluid">
+      <div class="row">
           <a href="home.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
-          <ul class="pull-right navbar">
+          <ul class="pull-right">
               <li><a href="#">About</a></li>
               <li><a href="#">Offerings</a></li>
               <li><a href="#">Resources</a></li>
@@ -74,23 +79,6 @@
               <li class="cta"><a href="#">Let's Build Together</a></li>
           </ul>
           <div class="hamburger pull-right">MENU</div>
-        </div>
-    </header>
-  <!-- Welcome banner -->
-  <section id="top" class="container-fluid">
-      <div id="header">
-          <div class="row">
-              <a href="home.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
-              <ul class="pull-right navbar">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Offerings</a></li>
-                  <li><a href="#">Resources</a></li>
-                  <li><a href="#">Team Culture</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li class="cta"><a href="#">Let's Build Together</a></li>
-              </ul>
-              <div class="hamburger pull-right">MENU</div>
-          </div>
       </div>
       <div class="row">
           <blockquote id="blockquote">Customer-driven software development for government and commercial enterprises.</blockquote>
@@ -323,9 +311,22 @@ Barca 97 is a year-round “futebol club” for players aged 15 – 16. Player d
         ctx.lineWidth= 2;
         ctx.strokeStyle="white";
         ctx.stroke();
-
+        /*
+        ctx.textAlign = "center";
+        ctx.font = "70px EkMukta";
+        ctx.fillStyle="white"; 
+        ctx.fillText("Customer-driven software development for government and commercial enterprises.", canvas.width/2, canvas.height/2);
+        */
+          
         var offset = $('blockquote').offset();
         $('canvas').offset({ top: offset.top, left: offset.left});
+          
+        /*
+        // move the content according to the height of the top section
+        var contentTop = $('section#top').offset().top + $('section#top').outerHeight();
+        var contentOffset = $('#content').offset();
+        $('#content').offset({ top: contentTop, left: contentOffset.left});
+        */
       }
       
       $( window ).load(function() {
@@ -336,16 +337,6 @@ Barca 97 is a year-round “futebol club” for players aged 15 – 16. Player d
       $(window).resize(function() {
           draw();
       });
-      
-      $(window).scroll(function () {
-            if ($(window).scrollTop() > $('section#top').height() - 45) {
-                //$('div#header').addClass("header-showing");
-                $('header').fadeIn(100);
-            } else {
-                //$('div#header').removeClass("header-showing");
-                $('header').fadeOut();
-            }
-        });
       
       
     </script>
