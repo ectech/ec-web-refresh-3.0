@@ -44,6 +44,12 @@
     filter: alpha(opacity = 40); /* For IE */
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 a, a:link, a:visited {
     color: white;   
 }
@@ -116,6 +122,12 @@ p {
     margin-top: 20px;
 }
 
+p.small {
+    font-size: 22px; 
+    line-height: 32px;
+    padding-right: 80px;
+}
+
 section {
     font-family: 'EkMukta';
     font-weight: 100; 
@@ -152,14 +164,14 @@ blockquote {
 #content {
     position: relative;
     z-index: 50;
-    top: 810px;
+    top: 598px;
     background-color: white;
 }
 
-body#offerings #content, body#aboutus #content {
-    top: 598px;
+body#home #content {
+    
+    top: 810px;
 }
-
 
 header {
     background-color: #455560;
@@ -223,6 +235,11 @@ body#aboutus section#top {
 
 body#offerings section#top {
     background: url(../images/bg_offerings_header.jpg) no-repeat top center fixed;
+    background-size: cover;
+}
+
+body#team-culture section#top {
+    background: url(../images/bg_header_culture.jpg) no-repeat top center fixed;
     background-size: cover;
 }
 
@@ -574,7 +591,6 @@ section#services div.no-bottom {
 section#our-approach div.col-md-4 {
     text-align:left;
     padding: 0 80px 40px 0;
-    height: 400px;
 }
 
 section#our-approach h1 {
@@ -586,6 +602,57 @@ section#our-approach p  {
     color: #515151;
     font-weight: 100;
     line-height: 30px;    
+}
+
+/*********** OUR TEAM ************/
+
+section#our-team h1 {
+    color: #515151;
+}
+
+section#our-team div.col-md-6 {
+    text-align:left;
+    padding: 0 80px 40px 0;
+}
+
+section#our-team div.col-md-12 {
+    margin-bottom: 20px;
+}
+
+section#our-team div.col-md-6 h1 {
+    text-align: left; 
+    color: #515151;
+    margin-bottom: 30px;
+}
+
+body#team-culture section#photos {
+    background: #455560 url(../images/photo_culture_combined.jpg) no-repeat center center;
+    height: 600px;
+}
+
+body#aboutus section#photos {
+    background: #455560 url(../images/photo_aboutus_combined.jpg) no-repeat center center;
+    height: 600px;
+}
+
+body#aboutus section#browse-contracts {
+    background-color: #f7f7f7;   
+}
+
+body#aboutus section#browse-contracts div.block {
+    padding: 30px;  
+    margin: 15px 0;
+    background-color:#E3E8EB;
+    color: #455560;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+body#aboutus a.button-box {
+    width: 425px; 
+    margin-top: 30px;
 }
 
 /*********** HELPERS ************/
