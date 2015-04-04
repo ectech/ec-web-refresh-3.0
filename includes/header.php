@@ -40,7 +40,7 @@
         }
         
         $nav = '<div class="row">
-                  <a href="index.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
+                  <a href="/" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
                   <ul class="pull-right navbar">
                       <li ' . $aboutus . '><a href="aboutus.php">About</a></li>
                       <li' . $offerings . '><a href="offerings.php">Offerings</a></li>
