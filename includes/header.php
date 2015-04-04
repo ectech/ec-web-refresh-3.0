@@ -24,19 +24,19 @@
             $aboutus = ' class="selected"';
         }
         else if(strpos($url, 'contact.php') !== false) {
-            $contact == ' selected';
+            $contact = ' selected';
         }
         else if(strpos($url, 'resources.php') !== false) {
-            $resources == ' class="selected"';
+            $resources = ' class="selected"';
         }
         else if(strpos($url, 'culture.php') !== false) {
-            $culture == ' class="selected"';
+            $culture = ' class="selected"';
         }
         else if(strpos($url, 'offerings.php') !== false) {
-            $offerings == ' class="selected"';
+            $offerings = ' class="selected"';
         }
         else if(strpos($url, 'blog.php') !== false) {
-            $blog == ' class="selected"';
+            $blog = ' class="selected"';
         }
         
         $nav = '<div class="row">

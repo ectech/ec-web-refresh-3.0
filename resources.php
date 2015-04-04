@@ -61,43 +61,9 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="resources" class="ectext">
-  <!-- Affix Banner - hidden until scrolled down -->
-    <header id="nav">
-        <div class="row">
-          <a href="index.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
-          <ul class="pull-right navbar">
-              <li><a href="aboutus.html">About</a></li>
-              <li><a href="offerings.html">Offerings</a></li>
-              <li class="selected"><a href="resources.html">Resources</a></li>
-              <li><a href="culture.html">Team Culture</a></li>
-              <li><a href="blog">Blog</a></li>
-              <li><a href="contact.html" class="cta">Let's Build Together</a></li>
-          </ul>
-          <div class="hamburger pull-right">MENU</div>
-        </div>
-    </header>
-  <!-- Welcome banner -->
-  <section id="top" class="container-fluid">
-      <div id="header">
-          <div class="row">
-              <a href="index.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
-              <ul class="pull-right navbar">
-                  <li><a href="aboutus.html">About</a></li>
-                  <li><a href="offerings.html">Offerings</a></li>
-                  <li class="selected"><a href="resources.html">Resources</a></li>
-                  <li><a href="culture.html">Team Culture</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="contact.html" class="cta">Let's Build Together</a></li>
-              </ul>
-              <div class="hamburger pull-right">MENU</div>
-          </div>
-      </div>
-      <div class="row">
-          <blockquote id="blockquote">Hungry for more info?</blockquote>
-          <img src="images/icon_star_big_white.png" class="star">
-          <canvas width="1000" height="600" id="canvas" style="position:absolute"></canvas>
-      </div>
-  </section>
+    
+    <?php include 'includes/header.php'; echoNavigation('Hungry for more info?'); ?>  
+    
   <div id="content">
   <!-- Quality Section -->
   <section id="our-clients" class="container-fluid">
