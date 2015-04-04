@@ -14,40 +14,40 @@
 
     function echoNavigation($tagline) {
         $url = curPageURL();
-        $aboutus = 'class=""';
-        $offerings = 'class=""';
-        $resources = 'class=""';
-        $culture = 'class=""';
-        $contact = 'class=""';
+        $aboutus = ' class=""';
+        $offerings = ' class=""';
+        $resources = ' class=""';
+        $culture = ' class=""';
+        $contact = ' class=""';
         
         if(strpos($url, 'aboutus.php') !== false) {
-            $aboutus = 'class="selected"';
+            $aboutus = ' class="selected"';
         }
         else if(strpos($url, 'contact.php') !== false) {
-            $contact == 'selected';
+            $contact == ' selected';
         }
         else if(strpos($url, 'resources.php') !== false) {
-            $resources == 'class="selected"';
+            $resources == ' class="selected"';
         }
         else if(strpos($url, 'culture.php') !== false) {
-            $culture == 'class="selected"';
+            $culture == ' class="selected"';
         }
         else if(strpos($url, 'offerings.php') !== false) {
-            $offerings == 'class="selected"';
+            $offerings == ' class="selected"';
         }
         else if(strpos($url, 'blog.php') !== false) {
-            $blog == 'class="selected"';
+            $blog == ' class="selected"';
         }
         
         $nav = '<div class="row">
                   <a href="index.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
                   <ul class="pull-right navbar">
-                      <li' . $aboutus . '><a href="aboutus.html">About</a></li>
-                      <li' . $offerings . '><a href="offerings.html">Offerings</a></li>
-                      <li' . $resources . '><a href="resources.html">Resources</a></li>
-                      <li' . $culture . '><a href="culture.html">Team Culture</a></li>
+                      <li ' . $aboutus . '><a href="aboutus.php">About</a></li>
+                      <li' . $offerings . '><a href="offerings.php">Offerings</a></li>
+                      <li' . $resources . '><a href="resources.php">Resources</a></li>
+                      <li' . $culture . '><a href="culture.php">Team Culture</a></li>
                       <li' . $blog . '><a href="blog">Blog</a></li>
-                      <li><a href="contact.html" class="cta ' . $contact . '">Let\'s Build Together</a></li>
+                      <li><a href="contact.php" class="cta ' . $contact . '">Let\'s Build Together</a></li>
                   </ul>
                   <div class="hamburger pull-right">MENU</div>
                 </div>';
@@ -64,7 +64,7 @@
                   ' . $nav . '
               </div>
               <div class="row">
-                  <blockquote id="blockquote">' . $tagline . curPageURL() . '</blockquote>
+                  <blockquote id="blockquote">' . $tagline . '</blockquote>
                   <img src="images/icon_star_big_white.png" class="star">
                   <canvas width="1000" height="600" id="canvas" style="position:absolute"></canvas>
               </div>
