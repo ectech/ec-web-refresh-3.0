@@ -68,10 +68,10 @@
           <ul class="pull-right navbar">
               <li><a href="aboutus.html">About</a></li>
               <li><a href="offerings.html">Offerings</a></li>
-              <li><a href="#">Resources</a></li>
+              <li><a href="resources.html">Resources</a></li>
               <li class="selected"><a href="culture.html">Team Culture</a></li>
-              <li><a href="#">Blog</a></li>
-              <li class="cta"><a href="#">Let's Build Together</a></li>
+              <li><a href="blog">Blog</a></li>
+              <li><a href="contact.html" class="cta">Let's Build Together</a></li>
           </ul>
           <div class="hamburger pull-right">MENU</div>
         </div>
@@ -84,10 +84,10 @@
               <ul class="pull-right navbar">
                   <li><a href="aboutus.html">About</a></li>
                   <li><a href="offerings.html">Offerings</a></li>
-                  <li><a href="#">Resources</a></li>
+                  <li><a href="resources.html">Resources</a></li>
                   <li class="selected"><a href="culture.html">Team Culture</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li class="cta"><a href="#">Let's Build Together</a></li>
+                  <li><a href="blog">Blog</a></li>
+                  <li><a href="contact.html" class="cta">Let's Build Together</a></li>
               </ul>
               <div class="hamburger pull-right">MENU</div>
           </div>
@@ -166,6 +166,11 @@
                 <img src="images/icon_culture_circle_honeycomb.png" />
               </div>
           </div>
+          
+          <div class="col-lg-12">
+              <a href="joblistings.html" class="text-center button-box orange">Explore Job Listings</a>
+          </div>
+          
       </div>
   </section>
     

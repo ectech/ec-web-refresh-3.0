@@ -61,50 +61,15 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="home" class="ectext">
-  <!-- Affix Banner - hidden until scrolled down -->
-    <header id="nav">
-        <div class="row">
-          <a href="index.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
-          <ul class="pull-right navbar">
-              <li><a href="aboutus.html">About</a></li>
-              <li><a href="offerings.html">Offerings</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="culture.html">Team Culture</a></li>
-              <li><a href="#">Blog</a></li>
-              <li class="cta"><a href="#">Let's Build Together</a></li>
-          </ul>
-          <div class="hamburger pull-right">MENU</div>
-        </div>
-    </header>
-  <!-- Welcome banner -->
-  <section id="top" class="container-fluid">
-      <div id="header">
-          <div class="row">
-              <a href="home.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
-              <ul class="pull-right navbar">
-                  <li><a href="aboutus.html">About</a></li>
-                  <li><a href="offerings.html">Offerings</a></li>
-                  <li><a href="#">Resources</a></li>
-                  <li><a href="culture.html">Team Culture</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li class="cta"><a href="#">Let's Build Together</a></li>
-              </ul>
-              <div class="hamburger pull-right">MENU</div>
-          </div>
-      </div>
-      <div class="row">
-          <blockquote id="blockquote">Customer-driven software development for government and commercial enterprises.</blockquote>
-          <img src="images/icon_star_big_white.png" class="star">
-          <canvas width="1000" height="600" id="canvas" style="position:absolute"></canvas>
-      </div>
-  </section>
+    
+  <?php include 'includes/header.php'; echoNavigation('Customer-driven software development for government and commercial enterprises.'); ?>    
+  
   <div id="content">
   <!-- Our Promise Section -->
   <section id="promise" class="container-fluid">
       <div class="row">
           <img src="images/main_paragraph_artwork.png" width="100%">
           <h1>Our Promise</h1>
-          
             <p class="col-sm-6 text-left">At Evans &amp; Chambers we deliver the technology and management solutions that empower businesses 
             and government agencies to collaborate, share information and solve problems. With applied expertise 
             in defense and intelligence, we understand the landscape</p>
@@ -115,7 +80,7 @@
           
             <div class="clearfix"/>
 
-            <a href="#" class="text-uppercase text-center button-box">Learn More</a>
+            <a href="aboutus.html" class="text-uppercase text-center button-box">Learn More</a>
       </div>
   </section>
 
@@ -131,7 +96,7 @@
                   <li>Mobile App Development</li>
                   <li>Cloud Computing</li>
                   <li>Business Process Analysis &amp; Modeling</li>
-                  <li class="last"><a href="" class="button-underline">Learn More</a></li>
+                  <li class="last"><a href="offerings.html" class="button-underline">Learn More</a></li>
               </ul>
           </div>
           <div class="col-sm-6">
@@ -143,7 +108,7 @@
                   <li>Personnel Security</li>
                   <li>Immigration</li>
                   <li>Information Sharing</li>
-                  <li class="last"><a href="" class="button-underline">Learn More</a></li>
+                  <li class="last"><a href="offerings.html" class="button-underline">Learn More</a></li>
               </ul>            
           </div>
       </div>
@@ -177,7 +142,7 @@
           
           <div class="clearfix"/>
           
-          <a href="#" class="text-uppercase text-center button-box orange">Fill Out Our Contact Form</a>
+          <a href="contact.html" class="text-uppercase text-center button-box orange">Fill Out Our Contact Form</a>
 
           
       </div>
@@ -221,7 +186,7 @@
               
               <p>Evans &amp; Chambers was founded in 2003 by Jamil Evans and Andre Chambers. We’re a multiple prime contract holder rooted in the Shaw and LeDroit neighborhood of Washington D.C., offering Hub-zone and 8(a) contracts and participating in mentor/protégé programs. At EC we’re not just interested in agile technology and robust software development: we’re also doing everything we can to help this emerging, edgy community of ours establish itself as a powerful locus of urban professionals. Curious to know what we mean by that?</p>
 
-              <a href="#" class="text-uppercase text-left button-box">LEARN MORE</a>
+              <a href="aboutus.html" class="text-uppercase text-left button-box">LEARN MORE</a>
               <br class="clearfix"/>
            </div>
       </div>
@@ -260,7 +225,7 @@ Barca 97 is a year-round “futebol club” for players aged 15 – 16. Player d
           </article>
       </div>
       <div class="row">
-          <a href="#" class="text-center button-box orange">Read More from our Blog</a>
+          <a href="blog" class="text-center button-box orange">Read More from our Blog</a>
       </div>
 
   </section>

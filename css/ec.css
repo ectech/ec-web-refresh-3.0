@@ -67,6 +67,10 @@ h1 {
     -webkit-font-smoothing: antialiased;
 }
 
+h1.dark {
+    color: #46555f;
+}
+
 h2 {
     font-size: 35px; 
     font-weight: 600;
@@ -105,15 +109,26 @@ a.button-box {
     color: white;
     border: 3px solid white;
     padding: 22px 40px;
-    margin: 80px auto 20px;
+    margin: 50px auto 20px;
     text-align: center;
     display: block;
     width: 170px;
 }
 
+a.button-box:hover {
+    background-color:white;
+    color: #f15c22;
+    text-decoration: none;
+}
+
 a.orange {
     color: #f15c22;
     border-color: #f15c22;
+}
+
+a.orange:hover {
+    background-color: #f15c22;
+    color: white;
 }
 
 p {
@@ -190,7 +205,7 @@ header {
 
 header a.eclogo img {
     width:295px;
-    height: auto;
+    height: 52px;
     margin-top: 40px;
     background: url(../images/logo_ec_white.png) no-repeat top left;
 }
@@ -240,6 +255,16 @@ body#offerings section#top {
 
 body#team-culture section#top {
     background: url(../images/bg_header_culture.jpg) no-repeat top center fixed;
+    background-size: cover;
+}
+
+body#resources section#top {
+    background: url(../images/bg_header_resources.jpg) no-repeat top center fixed;
+    background-size: cover;
+}
+
+body#contact-us section#top {
+    background: url(../images/bg_header_contact.jpg) no-repeat top center fixed;
     background-size: cover;
 }
 
@@ -298,17 +323,39 @@ ul.navbar li {
     margin-left: 25px;
 }
 
-ul.navbar li.selected {
+ul.navbar li.selected a {
     border-bottom: 3px solid white; 
 }
 
-ul.navbar li.cta {
+ul.navbar li a:hover {
+    border-bottom: 3px solid #aaa;
+    text-decoration: none;
+}
+
+ul.navbar a.cta {
     border: 1px solid white;
     margin-left: 18px;
     text-transform: uppercase;
     font-weight:600;
     padding: 8px 11px;
     font-size: 16px;
+}
+
+ul.navbar a.cta:hover {
+    background-color: white;
+    color: #455560;
+    text-decoration: none;
+}
+
+ul.navbar a.cta.selected {
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 18px;
+    text-transform: uppercase;
+    font-weight:600;
+    padding: 8px 11px;
+    font-size: 16px;
+    color: #455560;
 }
 
 div.hamburger {
@@ -485,6 +532,10 @@ section#get-to-know a.button-box {
     margin: 20px 0 80px 60px;
 }
 
+section#get-to-know a.button-box:hover {
+    color: #46555f;   
+}
+
 section#get-to-know p {
     font-size: 22px; 
     line-height: 32px;
@@ -625,6 +676,10 @@ section#our-team div.col-md-6 h1 {
     margin-bottom: 30px;
 }
 
+section#our-team a.button-box {
+    width: 300px;
+}
+
 body#team-culture section#photos {
     background: #455560 url(../images/photo_culture_combined.jpg) no-repeat center center;
     height: 600px;
@@ -635,11 +690,36 @@ body#aboutus section#photos {
     height: 600px;
 }
 
-body#aboutus section#browse-contracts {
+section#browse-contracts {
     background-color: #f7f7f7;   
 }
 
-body#aboutus section#browse-contracts div.block {
+section#case-studies {
+    background-color: #f7f7f7; 
+    color: #455560;
+}
+
+section#contact-form {
+    background-color: #f7f7f7; 
+    color: #455560;
+}
+
+section#case-studies div.col-md-4 {
+    background-color: white;
+    height: 300px;
+    border: 1px solid #e3e8eb;
+    padding: 55px 30px;
+}
+
+section#case-studies div.col-md-4 img {
+    height: 110px;
+}
+
+section#case-studies div.col-md-4 p {
+    line-height: 37px;
+}
+
+div.block {
     padding: 30px;  
     margin: 15px 0;
     background-color:#E3E8EB;
@@ -649,10 +729,54 @@ body#aboutus section#browse-contracts div.block {
     text-transform: uppercase;
 }
 
+section#white-papers div.block {
+    background-color:#ff7447;
+    color: white;
+    text-transform: none;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+
+body#contact-us input, body#contact-us textarea  {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 18px;
+    margin-top: 20px;
+}
+
+body#contact-us textarea {
+    height: 250px;   
+}
 
 body#aboutus a.button-box {
     width: 425px; 
-    margin-top: 30px;
+}
+
+section#white-papers {
+    background-color: #f15c22;
+}
+
+section#our-headquarters {
+    background-color: #f15c22;
+    color: white;
+}
+
+section#our-headquarters p {
+    text-align: left;
+    font-size: 35px;
+    padding: 30px 0;
+}
+
+section#our-headquarters h1 {
+    text-align: left;
+}
+
+section#our-headquarters img {
+    max-width: 517px;
+    width: 100%;
 }
 
 /*********** HELPERS ************/

@@ -60,18 +60,18 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="offerings" class="ectext">
+<body id="contact-us" class="ectext">
   <!-- Affix Banner - hidden until scrolled down -->
     <header id="nav">
         <div class="row">
           <a href="index.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
           <ul class="pull-right navbar">
               <li><a href="aboutus.html">About</a></li>
-              <li class="selected"><a href="offerings.html">Offerings</a></li>
-              <li><a href="#">Resources</a></li>
+              <li><a href="offerings.html">Offerings</a></li>
+              <li><a href="resources.html">Resources</a></li>
               <li><a href="culture.html">Team Culture</a></li>
-              <li><a href="#">Blog</a></li>
-              <li class="cta"><a href="#">Let's Build Together</a></li>
+              <li><a href="blog">Blog</a></li>
+              <li><a href="contact.html" class="cta selected">Let's Build Together</a></li>
           </ul>
           <div class="hamburger pull-right">MENU</div>
         </div>
@@ -83,142 +83,85 @@
               <a href="index.html" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
               <ul class="pull-right navbar">
                   <li><a href="aboutus.html">About</a></li>
-                  <li class="selected"><a href="offerings.html">Offerings</a></li>
-                  <li><a href="#">Resources</a></li>
+                  <li><a href="offerings.html">Offerings</a></li>
+                  <li><a href="resources.html">Resources</a></li>
                   <li><a href="culture.html">Team Culture</a></li>
                   <li><a href="#">Blog</a></li>
-                  <li class="cta"><a href="#">Let's Build Together</a></li>
+                  <li><a href="contact.html" class="cta selected">Let's Build Together</a></li>
               </ul>
               <div class="hamburger pull-right">MENU</div>
           </div>
       </div>
       <div class="row">
-          <blockquote id="blockquote">Custom Enterprise Web Application Development</blockquote>
+          <blockquote id="blockquote">Talk to us.</blockquote>
           <img src="images/icon_star_big_white.png" class="star">
           <canvas width="1000" height="600" id="canvas" style="position:absolute"></canvas>
       </div>
   </section>
   <div id="content">
-  <!-- Our Promise Section -->
+  <!-- Quality Section -->
   <section id="our-clients" class="container-fluid">
       <div class="row">
-          <h1>Our Capabilities</h1>
+          <div class="col-lg-12">
+          <h1>Fill out the contact form below and we'll be in touch.</h1>
           <img src="images/separator_flagstripes.png" />
-          <div class="clearfix"/>
-          <br/>
-          <p class="col-sm-10 col-sm-push-1">At Evans &amp; Chambers, we partner with our clients to create solutions that fit like a glove: agile, test-driven development with security baked in from the ground up, designed from a deep-rooted understanding of your particular business landscape. Our goal? To eliminate the barriers to collaboration and information-sharing, one project at a time.</p>
-      </div>
-  </section>
-
-  <!-- Offerings Section -->
-  <section id="services" class="container-fluid">
-      <div class="row">
-          <div class="col-lg-6 left">
-              <img src="images/icon_offerings_apiwebservice.png"/><br/>
-              <h1>API/Web Service Development</h1>
-              <p>Access new revenue streams by monetizing your applications, letting other developers build securely on tools you've created.</p>
           </div>
-          <div class="col-lg-6">
-              <img src="images/icon_offerings_mobile.png"/><br/>
-              <h1>Mobile App Development</h1>
-              <p>Bring your solution to today's fastest-growing, most popular platform, and start reaching more customers.</p>
-          </div>
-          
-      </div>
-      <div class="row">
-          <div class="col-lg-6 left">
-              <img src="images/icon_offerings_cloud.png"/><br/>
-              <h1>Cloud Computing</h1>
-              <p>Eliminate data center overhead, reduce your need for admin and realize new efficiencies in development and maintenance.</p>
-          </div>
-          <div class="col-lg-6">
-              <img src="images/icon_offerings_businessproc.png"/><br/>
-              <h1>Business Process Analysis &amp; Modeling</h1>
-              <p>Strategically evaluate your existing business processes, and innovte new models to streamline your operations.</p>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-6 left">
-              <img src="images/icon_offerings_insider.png"/><br/>
-              <h1>Insider Threat</h1>
-              <p>Establish a comprehensive vantage point to understand your users, mitigate risks and protect your data and systems.</p>
-          </div>
-          <div class="col-lg-6">
-              <img src="images/icon_offerings_immigration.png"/><br/>
-              <h1>Immigration</h1>
-              <p>Modernize the immigration process by implementing breakthrough solutions for better througput and accuracy.</p>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-6 left no-bottom">
-              <img src="images/icon_offerings_persec.png"/><br/>
-              <h1>Personnel Security</h1>
-              <p>Improve throughput, refining the accuracy of your clearances while dramatically reducing processing time.</p>
-          </div>
-          <div class="col-lg-6 no-bottom">
-              <img src="images/icon_offerings_ct.png"/><br/>
-              <h1>Counterterrorism</h1>
-              <p>Deploy solutions that make it easier for analysts to understand threats and keep our nation safe.</p>
+          <div class="col-lg-12">
+              <br/>
+              <p class="col-sm-12">Your project, your questions, your priorities.  We want to hear from you.</p>
           </div>
       </div>
   </section>
 
-  <!-- Are you hungry? -->
-  <section id="our-approach" class="container-fluid">
+  <!-- How we see our team? -->
+  <section id="contact-form" class="container-fluid">
       <div class="row">
-              <h1>Our Approach</h1>
-              <img src="images/separator_flagstripes.png" />
-              <div class="clearfix"/>
-          <br/> 
-          <br/>
+          <div class="col-md-4 col-sm-12">
+              <input type="text" placeholder="Name" class="col-xs-12" />
+          </div>
+          <div class="col-md-4 col-md-12">
+              <input type="text" placeholder="Email" class="col-xs-12" />
+          </div>
+          <div class="col-md-4">
+              <input type="text" placeholder="Phone" class="col-xs-12" />
+          </div>
       </div>
+
       <div class="row">
           <div class="col-md-12">
-              <div class="col-md-4" style="text-align:center; padding: 30px 0;">
-                <img src="images/icon_offerings_circle-shield.png" />
-              </div>
-              <div class="col-md-4">
-                <h4>No translation necessary.</h4>
-                <p>At EC, we do our homework: taking the time to understand not only your challenges, but how you do business. Then we build that knowledge directly into your software architecture and design.</p>
-              </div>
-              <div class="col-md-4">
-                <h4>More than a service provider.</h4>
-                <p>We partner with our clients, shouldering your goals as our own while offering value-added management consultation along the way to transform your operations for the better.</p>
-              </div>
+              <input type="text" placeholder="Subject" class="col-xs-12" />
           </div>
-          
-          <div class="col-md-12">
-              <div class="col-md-4">
-                <h4>We’re not technology snobs.</h4>
-                <p>We respect the investments you’ve made and the technologies you’ve chosen. Drawing from our expertise, we leverage those tools and build on them using complementary technologies.</p>
-              </div>
-              <div class="col-md-4">
-                <h4>Changing needs? Reach back.  </h4>
-                <p>Projects evolve. At EC, we respond to our clients’ shifting needs with a diversity of skills and specialties, backed by a culture of continual training, best practices and internal collaboration.</p>
-              </div>
-
-              <div class="col-md-4">
-                <h4>Build in quality.</h4>
-                <p>Through test-driven development, we focus on user experience as well as functionality, including access for the disabled – because we believe that when technology is inclusive, everyone benefits.</p>
-              </div>
-          </div>
+      </div>
       
+      <div class="row">
           <div class="col-md-12">
-              <div class="col-md-4">
-                <h4>Agility makes a difference.</h4>
-                <p>We design, develop, test and deploy in short iterations, using methodologies like XP and Kanban with frequent check-points that let us change course on a dime and maximize success potential.</p>
-              </div>
-              <div class="col-md-4">
-                <h4>Security comes first. </h4>
-                <p>To be effective, it has to be in the DNA. We bake in security requirements early, continually revalidating that the solution is compliant with its requirements – from FISMA to ICD 503.</p>
-              </div>
-              <div class="col-md-4" style="text-align:center; padding: 30px 0;">
-                <img src="images/icon_offerings_circle-starofstars.png" />
-              </div>
+              <textarea placeholder="Message" class="col-xs-12"></textarea>
           </div>
+      </div>
+      
+      <div class="row">
+          <a href="#" class="text-uppercase text-center button-box orange">Submit</a>
       </div>
   </section>
     
+  <section id="our-headquarters" class="container-fluid">
+      <div class="row">
+          <div class="col-md-5 col-md-offset-1" style="display:inline-block; vertical-align:middle;">
+              <h1>Our Headquarters</h1>
+              <p>
+                635 Florida Avenue, NW<br/>
+                Second Floor</br>
+                Washington, DC 20001<br/>
+                <br/>
+                Tel: (202) 768-7330<br/>
+                Fax: (877) 239-6563<br/>
+              </p>
+          </div>
+          <div class="col-md-6">
+              <img src="images/photo_map.png" />
+          </div>
+      </div>
+  </section>
     
   <!-- Footer Section -->
   <section id="footer" class="container-fluid">
@@ -293,7 +236,7 @@
       });
       
       $(window).scroll(function () {
-            if ($(window).scrollTop() > $('section#top').height() - 195) {
+            if ($(window).scrollTop() > $('section#top').height() - 115) {
                 //$('div#header').addClass("header-showing");
                 $('header').fadeIn(100);
             } else {
