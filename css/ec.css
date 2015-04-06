@@ -699,6 +699,11 @@ section#case-studies {
     color: #455560;
 }
 
+section#case-studies a {
+    background-color: #fff; 
+    color: #455560;
+}
+
 section#contact-form {
     background-color: #f7f7f7; 
     color: #455560;
@@ -777,6 +782,26 @@ section#our-headquarters h1 {
 section#our-headquarters img {
     max-width: 517px;
     width: 100%;
+}
+
+/*********** CASE STUDY ************/
+section#case-study {
+    color: #455560;
+}
+
+section#case-study h1 {
+    color: #455560;
+    text-align: left;
+}
+
+section#case-study div {
+    text-align: left;
+    font-size: 28px; 
+    line-height: 44px;
+}
+
+section#case-study div.row div {
+    padding: 2em;
 }
 
 /*********** HELPERS ************/

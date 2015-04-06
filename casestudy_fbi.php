@@ -60,114 +60,78 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="resources" class="ectext">
+<body id="aboutus" class="ectext">
     
-    <?php include 'includes/header.php'; echoNavigation('Hungry for more info?'); ?>  
-    
+    <?php include 'includes/header.php'; echoNavigation('FBI Terrorist Screening'); ?>
+  
   <div id="content">
-  <!-- Quality Section -->
-  <section id="our-clients" class="container-fluid">
+  
+  <!-- Case Study Intro -->
+  <section class="container-fluid" style="padding-top:50px;">
       <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-          <h1>Explore the research we've done and the projects we're proud of.</h1>
-          <img src="images/separator_flagstripes.png" />
+          <p class="col-sm-12">EC provided software development expertise to expedite identification of
+            suspected terrorists and provided a redress interface to meet Congress mandates for resolving
+            false positives.</p>
+          <div class="col-sm-12" style="padding: 20px 0;">
+              <img src="images/separator_flagstripes.png">
           </div>
-          <div class="col-lg-12">
-              <br/>
-              <p class="col-sm-12">If you’re looking for additional information on the work we do at EC, you’re in the right place.</p>
+
+          <div class="clearfix"></div>
+      </div>
+  </section>
+
+  <!-- Case Study copy -->
+  <section id="case-study" class="container-fluid">
+      <div class="row">
+          <div class="col-sm-6 text-left small" style="background-color:#f7f7f7;">
+            <span class="text-uppercase"><strong>Customer</strong></span><br/>
+            FBI Terrorist Screening Center (TSC)
+            <br/><br/>
+
+            <span class="text-uppercase"><strong>Services</strong></span><br/>
+            Web Development
+            <br/><br/>
+
+            <span class="text-uppercase"><strong>Solution Areas</strong></span><br/>
+            Counterterrorism
+            <br/><br/>
+
+            <span class="text-uppercase"><strong>Technologies</strong></span><br/>
+            Oracle / JavaScript / JQuery / 
+              <span class="text-nowrap">Apache Struts</span> / Spring
+              / Velocity / Hibernate / SourceControl / 
+              <span class="text-nowrap">Apache Maven</span> / Linux / 
+              <span class="text-nowrap">Java Enterprise</span> / 
+              <span class="text-nowrap">Edition N-Tier</span> / CSS / 
+              <span class="text-nowrap">Agile Development</span>
+            <br/><br/>
+          </div>
+
+          <div class="col-sm-6 text-left small">
+            <h1>Terrorist Screening Center Application Development</h1><br/>
+            
+            The Terrorist Screening Development Center (TSDC) provides all IT support
+            for the FBI's Terrorist Screening Center (TSC). The TSC is charged with
+            protecting the United States from all terrorist attacks and holds the
+            official repository for all known and suspected terrorists. TSC needed
+            to expedite the analysis of international terrorists and streamline the
+            processing of domestic terrorists.<br/><br/>
+
+            Evans & Chambers Technology provided web design and development,
+            software integration and system administration, expertise for the
+            flagship Terrorist Screening Database (TSDB). Leaning on past
+            performance with the National Counter Terrorism Center and other
+            Intelligence Community customers, EC actively contributed years
+            of domain expertise in counter-terrorism.<br/><br/>
+
+            With only three development sprints of three weeks, EC deployed a
+            Java Enterprise Edition enterprise application, allowing faster
+            processing and sharing of domestic and international terrorist data.
+
           </div>
       </div>
   </section>
 
-  <!-- How we see our team? -->
-  <section id="case-studies" class="container-fluid">
-      <div class="row">
-              <h1 class="dark">Case Studies</h1>
-              <img src="images/icon_star_small_orange.png" />
-              <div class="clearfix"/>
-          <br/> 
-          <br/>
-      </div>
-      <div class="row">
-          <div class="col-md-12">
-              <div class="col-md-4">
-                  <img src="images/logo_dia.png" /><br/>
-                  <p><a href="casestudy_fbi.php">FBI Terrorist Screening</a></p>
-              </div>
-              <div class="col-md-4">
-                  <img src="images/logo_fbi.png" /><br/>
-                  <p>IC Cross-Domain Solution</p>
-              </div>
-              <div class="col-md-4">
-                  <img src="images/logo_dhs.png" /><br/>
-                  <p>IC Insider Threat</p>
-              </div>
-          </div>
-          
-          <div class="col-md-12">
-              <div class="col-md-4">
-                  <img src="images/logo_dia.png" /><br/>
-                  <p>IC Supply Chain Risk</p>
-              </div>
-              <div class="col-md-4">
-                  <img src="images/logo_fbi.png" /><br/>
-                  <p>Citizenship Immigration Services</p>
-              </div>
-              <div class="col-md-4">
-                  <img src="images/logo_dhs.png" /><br/>
-                  <p>DIA Mentor Protege Program Management</p>
-              </div>
-          </div>
-      </div>
-  </section>
-    
-  <section id="white-papers" class="container-fluid">
-      <div class="row">
-              <h1>White Papers</h1>
-              <img src="images/icon_star_small_white.png" />
-      </div>
-      <div class="row">
-          <img src="images/icon_star_small_orange.png">
-          <br/>
-      </div>
-      
-      <div class="row">
-          <div class="col-md-6">
-              <div class="block"><a href="#">Title of document here lorem ipsum</a></div>
-          </div>
-          <div class="col-md-6">
-              <div class="block"><a href="#">Title of document here lorem ipsum</a></div>
-          </div>
-      </div>
-      
-      <div class="row">
-          <div class="col-md-6">
-              <div class="block"><a href="#">Lorem ipsum emet sit dolor</a></div>
-          </div>
-          <div class="col-md-6">
-              <div class="block"><a href="#">Lorem ipsum emet sit dolor</a></div>
-          </div>
-      </div>
-      
-      <div class="row">
-          <div class="col-md-6">
-              <div class="block"><a href="#">Title of document here lorem ipsum</a></div>
-          </div>
-          <div class="col-md-6">
-              <div class="block"><a href="#">Lorem ipsum emet sit dolor</a></div>
-          </div>
-      </div>
-      
-      <div class="row">
-          <div class="col-md-6">
-              <div class="block"><a href="#">Lorem ipsum emet sit dolor</a></div>
-          </div>
-          <div class="col-md-6">
-              <div class="block"><a href="#">Lorem ipsum emet sit dolor</a></div>
-          </div>
-      </div>
-  </section>
-    
   <!-- Footer Section -->
   <section id="footer" class="container-fluid">
       <div class="row">
@@ -185,9 +149,6 @@
       </div>
   </section>
   </div>
-    
-
-    
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
@@ -226,9 +187,22 @@
         ctx.lineWidth= 2;
         ctx.strokeStyle="white";
         ctx.stroke();
-
+        /*
+        ctx.textAlign = "center";
+        ctx.font = "70px EkMukta";
+        ctx.fillStyle="white"; 
+        ctx.fillText("Customer-driven software development for government and commercial enterprises.", canvas.width/2, canvas.height/2);
+        */
+          
         var offset = $('blockquote').offset();
         $('canvas').offset({ top: offset.top, left: offset.left});
+          
+        /*
+        // move the content according to the height of the top section
+        var contentTop = $('section#top').offset().top + $('section#top').outerHeight();
+        var contentOffset = $('#content').offset();
+        $('#content').offset({ top: contentTop, left: contentOffset.left});
+        */
       }
       
       $( window ).load(function() {
@@ -241,9 +215,9 @@
       });
       
       $(window).scroll(function () {
-            if ($(window).scrollTop() > $('section#top').height() - 195) {
+            if ($(window).scrollTop() > $('section#top').height() - 105) {
                 //$('div#header').addClass("header-showing");
-                $('header').fadeIn(100);
+                $('header').fadeIn(200);
             } else {
                 //$('div#header').removeClass("header-showing");
                 $('header').fadeOut();
@@ -251,7 +225,7 @@
         });
       
       
-    </script>
+  </script>
 
 </body>
 </html>
