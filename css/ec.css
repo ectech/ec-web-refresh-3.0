@@ -806,6 +806,10 @@ section#case-study div.row div {
 
 /*********** HELPERS ************/
 
+section#joblistings div.row p {
+    text-align: left;
+}
+
 .text-underline {
   text-decoration: underline;
 }

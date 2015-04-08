@@ -9,7 +9,6 @@
 
   <title>EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
     
-    <!-- temporary comment - added by Vik - Mar 9 -->
     <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\--                   
 
 
@@ -75,13 +74,11 @@
           <div class="col-sm-12" style="padding: 20px 0;">
               <img src="images/separator_flagstripes.png">
           </div>
-
-          <div class="clearfix"></div>
       </div>
   </section>
 
   <!-- Case Study copy -->
-  <section id="case-study" class="container-fluid">
+  <section id="case-study" class="container-fluid" style="padding:0px;">
       <div class="row">
           <div class="col-sm-6 text-left small" style="background-color:#f7f7f7;">
             <span class="text-uppercase"><strong>Customer</strong></span><br/>

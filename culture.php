@@ -9,7 +9,6 @@
 
   <title>EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
     
-    <!-- temporary comment - added by Vik - Mar 9 -->
     <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\--                   
 
 
@@ -134,7 +133,7 @@
           </div>
           
           <div class="col-lg-12">
-              <a href="joblistings.html" class="text-center button-box orange">Explore Job Listings</a>
+              <a href="joblistings.php" class="text-center button-box orange">Explore Job Listings</a>
           </div>
           
       </div>
