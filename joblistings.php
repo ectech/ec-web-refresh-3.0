@@ -134,8 +134,32 @@
         <p class="col-sm-4">Information Technology</p>
       </div>
 
+      <div class="row">
+          <div class="col-md-2 col-md-offset-0">
+              <div class="arrowblock"><span aria-hidden="true" style="color:red;" class="glyphicon glyphicon-arrow-left"></span></div>
+          </div>
+          <div class="col-md-2 col-md-offset-7">
+              <div class="arrowblock"><span aria-hidden="true" style="color:red;" class="glyphicon glyphicon-arrow-right"></span></div>
+          </div>
+      </div>
 
-<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      <div class="row">
+        <p class="col-sm-12 small" style="border-top:1px solid #ccc;padding-top:15px;margin-top:10px;" >Evans & Chambers Technology participates in the E-Verify Program, which is an
+          internet-based system that allows businesses to determine the eligibility of their employees
+          to work in the United States.</p>
+
+      </div>
+  </section>
+
+  <!-- Job listings -->
+  <section id="what-its-like" class="container-fluid" style="padding-top:50px;">
+      <div class="row">
+        <p class="col-sm-12 small">Curious what it's like, working at EC? Explore our company culture.</p>
+      </div>
+
+      <div class="col-lg-12">
+          <a href="culture.php" class="text-center button-box orange" style="width:15em;">Click Here</a>
+      </div>
 
   </section>
 
