@@ -12,7 +12,7 @@ echo '  <section id="footer" class="container-fluid">
               </ul>     
           </div>
           <div class="col-md-2">
-              <a href="#"><img src="images/icon_facebook.png" class="img-link"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/icon_twitter.png"></a>
+              <a href="https://www.facebook.com/evanschamberstechnology"><img src="images/icon_facebook.png" class="img-link"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/ectech"><img src="images/icon_twitter.png"></a>
           </div>
       </div>
   </section>
@@ -23,6 +23,8 @@ echo '  <section id="footer" class="container-fluid">
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+  <script src="js/morphext.min.js"><script>
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
@@ -38,6 +40,7 @@ echo '  <section id="footer" class="container-fluid">
 
   <script>
         
+
       
       function draw() {
         
@@ -62,9 +65,23 @@ echo '  <section id="footer" class="container-fluid">
         var offset = $(\'blockquote\').offset();
         $(\'canvas\').offset({ top: offset.top, left: offset.left});
       }
-      
+
+      $("#blockquote").attr("style", "opacity:0");
+      $(".star").attr("style", "opacity:0");
+
       $( window ).load(function() {
             draw();
+            $(".star").animate({"opacity": "1"}, 300, function() {
+              $("canvas").animate({"opacity": "1"}, 300, function() {
+                $("#blockquote").attr("style", "opacity:1");
+                $("#blockquote").addClass("animated pulse");
+                $(".star").addClass("animated pulse");
+              });
+            });
+
+              
+            
+            
             $(window).scroll();
       });
       

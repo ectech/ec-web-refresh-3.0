@@ -1,3 +1,60 @@
+<?php
+
+header("Cache-Control: no-cache");
+
+$success_msg = "Your referral has been submitted.<br/>Now get back to work!";
+
+if(isset($_POST['submitContactForm']))
+{
+
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $message = $_POST['message'];
+  $subject = $_POST['subject'];
+  
+  if(validateFormMandatory($name, $email, $message, $subject)) {
+    $body = "The following message was submitted through the contact from on the EC public website: \r\n\r\n";
+    $body .= "Name: {$name} \r\nEmail: {$email}\r\nPhone: {$phone}\r\nSubject: {$subject}\r\nMessage: {$message}\r\n";
+
+    // email EC
+    $to = "jamil.evans@evanschambers.com";
+    $headers = "Reply-To: EC Technology <admin@evanschambers.com>\r\n";
+    $headers .= "Return-Path: EC Technology <admin@evanschambers.com>\r\n";
+    $headers .= "From: EC Technology <admin@evanschambers.com>\r\n";
+    $headers .= "Organization: Evans & Chambers Technology\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+    $headers .= "X-Priority: 3\r\n";
+    $headers .= "X-Mailer: PHP". phpversion() ."\r\n";
+    
+    mail($to, $subject, $body, $headers);
+  }
+}
+
+$empty_name = 'false';
+$empty_email = 'false';
+$empty_subject = 'false';
+$empty_message = 'false';
+
+function validateFormMandatory($name, $email, $message, $subject) { 
+  if(empty($name))
+    $empty_name = 'true';
+  if(empty($email))
+    $empty_email = 'true';
+  if(empty($subject))
+    $empty_subject = 'true';
+  if(empty($message))
+    $empty_message = 'true';
+    
+  if($empty_name == 'true' || $empty_email == 'true' || $empty_subject == 'true' || $empty_message == 'true') {
+    return false; // validation error 
+  } else {
+    return true; // no errors
+  }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,14 +89,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="author" content="Evans & Chambers Technology, LLC">
-	<meta name="robots" content="index,follow,archive">
-	<meta name="description" content="At Evans & Chambers we deliver the technology and management solutions that empower businesses and government agencies to collaborate, share information and solve problems. With applied expertise in defense and intelligence, we understand the landscape our clients navigate. More, we approach each challenge via active dialogue, working with you side-by-side to accomplish your objectives. And the results speak for themselves. For us, success is measured in the seconds and dollars regained by each and every client.">
+  <meta name="author" content="Evans & Chambers Technology, LLC">
+  <meta name="robots" content="index,follow,archive">
+  <meta name="description" content="At Evans & Chambers we deliver the technology and management solutions that empower businesses and government agencies to collaborate, share information and solve problems. With applied expertise in defense and intelligence, we understand the landscape our clients navigate. More, we approach each challenge via active dialogue, working with you side-by-side to accomplish your objectives. And the results speak for themselves. For us, success is measured in the seconds and dollars regained by each and every client.">
   <meta property="og:image" content=""> <!-- RJE: put URL to the header background image here -->
-	<meta property="og:title" content="EC Technology, LLC">
-	<meta property="og:url" content="http://evanschambers.com/">
+  <meta property="og:title" content="EC Technology, LLC">
+  <meta property="og:url" content="http://evanschambers.com/">
   <meta property="og:site_name" content="EC Technology, LLC">
-	<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 
   <!-- Bootstrap Core -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -49,12 +106,13 @@
 
   <!-- Custom CSS -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
 
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-	<link rel="stylesheet" href="css/ec.css" media="screen" />
+  <link rel="stylesheet" href="css/ec.css" media="screen" />
 <!--  <link rel="stylesheet" href="css/component.css" media="screen" />  -->
 </head>
 
@@ -81,33 +139,37 @@
 
   <!-- How we see our team? -->
   <section id="contact-form" class="container-fluid">
-      <div class="row">
-          <div class="col-md-4 col-sm-12">
-              <input type="text" placeholder="Name" class="col-xs-12" />
-          </div>
-          <div class="col-md-4 col-md-12">
-              <input type="text" placeholder="Email" class="col-xs-12" />
-          </div>
-          <div class="col-md-4">
-              <input type="text" placeholder="Phone" class="col-xs-12" />
-          </div>
-      </div>
+      <form name="contactForm" method="post" action="contact.php" id="form">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <input type="text" placeholder="Name" name="name" class="col-xs-12" />
+            </div>
+            <div class="col-md-4 col-md-12">
+                <input type="text" placeholder="Email" name="email" class="col-xs-12" />
+            </div>
+            <div class="col-md-4">
+                <input type="text" placeholder="Phone" name="phone" class="col-xs-12" />
+            </div>
+        </div>
 
-      <div class="row">
-          <div class="col-md-12">
-              <input type="text" placeholder="Subject" class="col-xs-12" />
-          </div>
-      </div>
-      
-      <div class="row">
-          <div class="col-md-12">
-              <textarea placeholder="Message" class="col-xs-12"></textarea>
-          </div>
-      </div>
-      
-      <div class="row">
-          <a href="#" class="text-uppercase text-center button-box orange">Submit</a>
-      </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" placeholder="Subject" name="subject" class="col-xs-12" style="<?php if($empty_subject == "true") { echo "background-color: red;"; } ?>" />
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <textarea placeholder="Message" name="message" class="col-xs-12"></textarea>
+            </div>
+        </div>
+        
+        <div class="row">
+            <a href="#" class="text-uppercase text-center button-box orange" onclick="document.getElementById('form').submit(); return false;">Submit</a>
+        </div>
+        <input type="hidden" name="submitContactForm" value="submitted" />
+    </form>
+    <?php echo (string) $empty_subject; ?>
   </section>
     
   <section id="our-headquarters" class="container-fluid">
@@ -130,89 +192,7 @@
   </section>
     
   <!-- Footer Section -->
-  <section id="footer" class="container-fluid">
-      <div class="row">
-          <div class="col-md-10">
-              <ul>
-                  <li>&copy; Evans &amp; Chambers, LLC, 2015</li>
-                  <li><a href="mailto:info@evanschambers.com">info@evanschambers.com</a></li>
-                  <li><a href="tel:2027687330">202 768 7330</a></li>
-                  <li>635 Florida Ave NW, &nbsp; 2nd Floor, &nbsp; Washington DC 20001</li>
-              </ul>     
-          </div>
-          <div class="col-md-2">
-              <a href="#"><img src="images/icon_facebook.png" class="img-link"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/icon_twitter.png"></a>
-          </div>
-      </div>
-  </section>
-  </div>
-    
-
-    
-
-  <!-- jQuery -->
-  <script src="js/jquery.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- Scrolling Nav JavaScript -->
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/scrolling-nav.js"></script>
-  <script src="js/jquery.fittext.js"></script>
-
-  <!--[if lte IE 9]>
-  <script src="/js/jquery.placeholder.js?v="></script>
-  <![endif]-->
-
-  <script>
-        
-      
-      function draw() {
-        
-        var canvas = document.getElementById("canvas");
-        canvas.width = $('blockquote').outerWidth();
-        canvas.height = $('blockquote').outerHeight();
-        var width = canvas.width;
-        var height = canvas.height;
-          
-        var ctx = canvas.getContext("2d");
-        ctx.moveTo(0, 0);
-        ctx.lineTo(width, 0);
-        ctx.lineTo(width, height);
-        ctx.lineTo(width/2 + 40, height);
-        ctx.moveTo(width/2 - 40, height);
-        ctx.lineTo(0, height);
-        ctx.lineTo(0, 0);
-        ctx.lineWidth= 2;
-        ctx.strokeStyle="white";
-        ctx.stroke();
-
-        var offset = $('blockquote').offset();
-        $('canvas').offset({ top: offset.top, left: offset.left});
-      }
-      
-      $( window ).load(function() {
-            //$('blockquote').fitText(0.8, { minFontSize: '30px', maxFontSize: '75px' })
-            draw();
-        });
-      
-      $(window).resize(function() {
-          draw();
-      });
-      
-      $(window).scroll(function () {
-            if ($(window).scrollTop() > $('section#top').height() - 115) {
-                //$('div#header').addClass("header-showing");
-                $('header').fadeIn(100);
-            } else {
-                //$('div#header').removeClass("header-showing");
-                $('header').fadeOut();
-            }
-        });
-      
-      
-    </script>
+  <?php include 'includes/footer.php'; echoFooter(800); ?>
 
 </body>
 </html>

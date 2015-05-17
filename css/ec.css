@@ -75,8 +75,15 @@ h2 {
     font-size: 35px; 
     font-weight: 600;
     margin: 0 0 15px;
+    text-decoration: none;
     -webkit-font-smoothing: antialiased;
 }
+
+h2 a:hover, h2 a:link, h2 a:visited {
+    color: ##46555f; 
+    text-decoration: none;
+}
+
 
 h3 {
     margin: 0;
@@ -151,6 +158,10 @@ section {
     width: 100%;
 }
 
+body#blog section {
+    padding: 50px 0;
+}
+
 .row {
     max-width: 1300px;
     margin: 0 auto;
@@ -169,6 +180,34 @@ blockquote {
     line-height: 80px;
     /* clip-path: inset(10px 20px 30px 40px); */
     -webkit-font-smoothing: antialiased;
+    
+}
+
+.star {
+    opacity: 0;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0.5s;
+}
+
+#blockquote {
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0s;
+    opacity: 0;
+}
+
+blockquote#blockquote-blog {
+    /* border: 1px solid #fff; */
+    border: none;   
+    color:#46555f; 
+    padding: 55px 100px 65px;
+    margin: 180px 0 45px;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 80px;
+    /* clip-path: inset(10px 20px 30px 40px); */
+    -webkit-font-smoothing: antialiased;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0s;
 }
 
 
@@ -186,6 +225,15 @@ blockquote {
 body#home #content {
     
     top: 810px;
+}
+
+body#blog #content {
+    top:0px;
+}
+
+body#contact-us #content {
+    
+    top: 140px;
 }
 
 header {
@@ -217,6 +265,10 @@ header ul.navbar {
 
 /********** TOP SECTION *********/
 
+canvas {
+    opacity: 0;
+}
+
 div#header {
     padding: 40px 0 80px;
     top:0;
@@ -235,12 +287,16 @@ section#top {
     position: fixed;
     padding-top: 45px;
     text-align:center;
-    background: url(../images/home-masthead-gray-image.jpg) no-repeat top center fixed;
+    background: black url(../images/home-masthead-gray-image2.jpg) no-repeat top center fixed;
     background-size: cover;
     /* 
     Commented out because it was disabling the links -- not sure it's needed.
     z-index: -100; 
     */
+}
+
+body#blog section#top {
+    position:inherit;
 }
 
 body#aboutus section#top {
@@ -268,12 +324,41 @@ body#contact-us section#top {
     background-size: cover;
 }
 
+body#blog section#top {
+    background: #fff;
+}
+
+body#blog section#one a {
+    color: #f15c22; 
+}
+
+body#blog section#blog-nav {
+    padding-top:0;
+}
+
+div.blog-nav-next a {
+    background: #f7f7f7 url(../images/icon_blog_next2x.png) no-repeat center center; 
+    background-size: 48px 15px;
+    padding:15px 20px; 
+    width:100px;
+    float:right;
+}
+
+div.blog-nav-prev a {
+    background: #f7f7f7 url(../images/icon_blog_prev2x.png) no-repeat center center; 
+    background-size: 48px 15px;
+    padding:15px 20px; 
+    width:100px;
+    float:left;
+}
+
 a.eclogo img {
     display:inline-block;
     width:295px;
     height: 52px;
     float: left;
     background: url(../images/logo_ec_white.png) no-repeat top left;
+    background-size: ;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -371,6 +456,14 @@ div.hamburger {
 section#top div.row img.star {
     position:relative;
     top:-165px; 
+    clear:both; 
+    margin:0; 
+    float:none;  
+}
+
+section#top div.row img.star.blog {
+    position:relative;
+    top: -60px; 
     clear:both; 
     margin:0; 
     float:none;  
@@ -779,6 +872,106 @@ section#our-headquarters img {
     width: 100%;
 }
 
+section#blog-categories {
+
+    text-align: center;
+}
+
+/************** Blog Category Navigation ************/
+
+ul.category-nav {
+    display:inline-table; /* to get the UL to be centered */
+    list-style: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+}
+
+ul.category-nav li {
+    clear:none;
+    display: inline-table; /* to get the li's to wrap and always be centered across multiple lines */
+    margin: 0 15px 15px 0;
+}
+
+ul.category-nav li a {
+    display:block;
+    padding: 10px 20px;
+    border: 1px solid #e3e8eb;
+    color: #46555f;
+    min-width: 150px;
+}
+
+ul.category-nav li a:hover, ul.category-nav li.current-cat a {
+    background-color: #e3e8eb;
+    text-decoration: none;
+}
+
+ul.category-nav li a.last {
+    margin-right: 0;
+}
+
+body#blog h2 {
+    background: #fff url(../images/separator_flagstripes.png) no-repeat bottom left;
+    padding-bottom: 35px;
+    margin-bottom: 20px;
+    color: #46555f;
+}
+
+body#blog p {
+    color: #46555f;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+div.blog-attributes {
+    margin-bottom: 20px;
+}
+
+span.author {
+    font-size: 22px;
+    font-weight: 300;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+span.author a {
+    font-weight: 600;
+    color: #46555f;
+}
+
+span.date-posted {
+    font-size: 22px;
+    font-weight: 600;
+    color: #b0b7bc;
+    margin-right:30px;
+    margin-bottom: 15px;
+}
+
+span.category {
+    display: inline-table;
+    font-size: 18px;
+    font-weight: 600;
+    color: #46555f;
+    margin: 10px 15px 10px 0;
+    padding: 8px 15px;
+    background-color: #e3e8eb;
+    text-transform: uppercase;
+    text-align: center;
+}
+body#blog section#one span.category a {
+    color:#46555f;
+
+}
+span.blog-separator {
+    text-align: center;
+    display: block;
+    margin: 40px 0 0 0;
+
+}
 /*********** HELPERS ************/
 
 .text-underline {

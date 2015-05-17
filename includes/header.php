@@ -40,18 +40,22 @@
         }
         
         $nav = '<div class="row">
-                  <a href="/" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
+                  <a href="index.php" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
                   <ul class="pull-right navbar">
                       <li ' . $aboutus . '><a href="aboutus.php">About</a></li>
                       <li' . $offerings . '><a href="offerings.php">Offerings</a></li>
                       <li' . $resources . '><a href="resources.php">Resources</a></li>
                       <li' . $culture . '><a href="culture.php">Team Culture</a></li>
-                      <li' . $blog . '><a href="blog">Blog</a></li>
+                      <li' . $blog . '><a href="blog.php">Blog</a></li>
                       <li><a href="contact.php" class="cta ' . $contact . '">Let\'s Build Together</a></li>
                   </ul>
                   <div class="hamburger pull-right">MENU</div>
                 </div>';
         
+        $blockquote_id = 'blockquote';
+        if(strpos($url, 'blog.php') !== false) {
+          $blockquote_id = 'blockquote-blog';
+        }
         
         echo '
             <!-- Affix Banner - hidden until scrolled down -->
@@ -64,11 +68,34 @@
                   ' . $nav . '
               </div>
               <div class="row">
-                  <blockquote id="blockquote">' . $tagline . '</blockquote>
-                  <img src="images/icon_star_big_white.png" class="star">
-                  <canvas width="1000" height="600" id="canvas" style="position:absolute"></canvas>
-              </div>
-          </section>';
+                  <blockquote id="' . $blockquote_id . '"><span id="js-rotating">' . $tagline . '</span></blockquote>';
+        if(strpos($url, 'blog.php') !== false) {
+          echo '  <img src="images/icon_star_big_gray2x.png" class="star blog" width="27">';
+        } else {
+          echo '  <img src="images/icon_star_big_white.png" class="star">';
         }
+
+          echo '
+                  <canvas width="1000" height="600" id="canvas" style="position:absolute"></canvas>
+              </div> ';
+        
+        if(strpos($url, 'blog.php') !== false) {
+          echo ' <div class="row"><div class="col-lg-10 col-lg-offset-1"><ul class="category-nav">
+                <li class="cat-item-all"><a href="#">All</a></li>
+                <li><a href="#">Commentary</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Commentary</a></li>
+                <li><a href="#">Events Development</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Commentary</a></li>
+                <li><a href="#">Events Development</a></li>
+                <li><a href="#" class="last">Technology</a></li>
+              </ul></div></div>';
+        }
+        echo '</section>';
+    }
 
 ?>
