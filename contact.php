@@ -66,7 +66,6 @@ function validateFormMandatory($name, $email, $message, $subject) {
 
   <title>EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
     
-    <!-- temporary comment - added by Vik - Mar 9 -->
     <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\--                   
 
 

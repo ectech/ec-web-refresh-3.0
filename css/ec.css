@@ -792,6 +792,11 @@ section#case-studies {
     color: #455560;
 }
 
+section#case-studies a {
+    background-color: #fff; 
+    color: #455560;
+}
+
 section#contact-form {
     background-color: #f7f7f7; 
     color: #455560;
@@ -872,6 +877,7 @@ section#our-headquarters img {
     width: 100%;
 }
 
+<<<<<<< HEAD
 section#blog-categories {
 
     text-align: center;
@@ -972,6 +978,69 @@ span.blog-separator {
     margin: 40px 0 0 0;
 
 }
+
+/*********** CASE STUDY ************/
+section#case-study {
+    color: #455560;
+}
+
+section#case-study h1 {
+    color: #455560;
+    text-align: left;
+}
+
+section#case-study div {
+    text-align: left;
+    font-size: 28px; 
+    line-height: 44px;
+}
+
+section#case-study div.row div {
+    padding: 2em;
+}
+
+/*********** JOB LISTINGS ************/
+
+section#job-listings div.row p {
+    text-align: left;
+}
+
+section#job-listings div.arrowblock {
+    padding: 10px;  
+    margin: 15px 0;
+    background-color:#E3E8EB;
+    color: #455560;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section#job-listings p { 
+    line-height: 28px; 
+    font-weight: 100;
+    font-size:20px;
+    text-align: right;
+}
+
+section#job-listings p a {
+    color: #46555f;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+section#job-listings div.row p.col-lg-3 {
+    text-align: right;
+}
+
+section#job-listings div.blog-nav-prev, section#job-listings div.blog-nav-next {
+    margin-top:40px;
+}
+
+section#what-its-like {
+    background-color: #f7f7f7;   
+}
+
 /*********** HELPERS ************/
 
 .text-underline {

@@ -9,7 +9,6 @@
 
   <title>EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
     
-    <!-- temporary comment - added by Vik - Mar 9 -->
     <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\--                   
 
 
@@ -93,7 +92,7 @@
           <div class="col-md-12">
               <div class="col-md-4">
                   <img src="images/logo_dia.png" /><br/>
-                  <p>FBI Terrorist Screening</p>
+                  <p><a href="casestudy_fbi.php">FBI Terrorist Screening</a></p>
               </div>
               <div class="col-md-4">
                   <img src="images/logo_fbi.png" /><br/>
