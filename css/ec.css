@@ -231,6 +231,10 @@ body#blog #content {
     top:0px;
 }
 
+body#job-posting #content {
+    top:140px;
+}
+
 body#contact-us #content {
     
     top: 140px;
@@ -359,6 +363,52 @@ a.eclogo img {
     float: left;
     background: url(../images/logo_ec_white.png) no-repeat top left;
     background-size: ;
+}
+
+section#job-post {
+    color: #46555f;
+    
+}
+
+section#job-post h1 {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 0 30px;
+}
+
+section#job-post div.job-info-box {
+    background-color: #f7f7f7;
+    margin:20px 0 50px;
+    padding: 40px;
+    color: #46555f;
+    font-size: 25px;
+}
+
+section#job-post h3 {
+    color: #46555f;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+section#job-post ul {
+    margin: 30px 0 50px;
+    padding-left:25px;
+
+}
+
+section#job-post li {
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+section#job-post div.job-info-box p {
+    margin: 5px 0 25px;
+    
+}
+
+section#job-post div.job-post-details p {
+    font-size: 20px; 
+    line-height: 30px;
+    margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -877,7 +927,6 @@ section#our-headquarters img {
     width: 100%;
 }
 
-<<<<<<< HEAD
 section#blog-categories {
 
     text-align: center;
