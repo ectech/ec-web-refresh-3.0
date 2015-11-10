@@ -2,7 +2,7 @@
 
 header("Cache-Control: no-cache");
 
-$success_msg = "Your referral has been submitted.<br/>Now get back to work!";
+$success_msg = "";
 
 if(isset($_POST['submitContactForm']))
 {
@@ -11,14 +11,14 @@ if(isset($_POST['submitContactForm']))
   $email = $_POST['email'];
   $phone = $_POST['phone'];
   $message = $_POST['message'];
-  $subject = $_POST['subject'];
+  $subject = "[ECWEB] " . $_POST['subject'];
   
   if(validateFormMandatory($name, $email, $message, $subject)) {
     $body = "The following message was submitted through the contact from on the EC public website: \r\n\r\n";
     $body .= "Name: {$name} \r\nEmail: {$email}\r\nPhone: {$phone}\r\nSubject: {$subject}\r\nMessage: {$message}\r\n";
 
     // email EC
-    $to = "jamil.evans@evanschambers.com";
+    $to = "marcom@evanschambers.com, jamil.evans@evanschambers.com";
     $headers = "Reply-To: EC Technology <admin@evanschambers.com>\r\n";
     $headers .= "Return-Path: EC Technology <admin@evanschambers.com>\r\n";
     $headers .= "From: EC Technology <admin@evanschambers.com>\r\n";
@@ -29,6 +29,9 @@ if(isset($_POST['submitContactForm']))
     $headers .= "X-Mailer: PHP". phpversion() ."\r\n";
     
     mail($to, $subject, $body, $headers);
+
+    $success_msg = "Your form has been submitted successfully. We'll contact you soon!";
+
   }
 }
 
@@ -58,62 +61,8 @@ function validateFormMandatory($name, $email, $message, $subject) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
-    
-    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\--                   
-
-
-
-
-     ______  ______       ______  ______  ______  __  __  __   __  ______  __      ______  ______  __  __    
-    /\  ___\/\  ___\     /\__  _\/\  ___\/\  ___\/\ \_\ \/\ "-.\ \/\  __ \/\ \    /\  __ \/\  ___\/\ \_\ \   
-    \ \  __\\ \ \____    \/_/\ \/\ \  __\\ \ \___\ \  __ \ \ \-.  \ \ \/\ \ \ \___\ \ \/\ \ \ \__ \ \____ \  
-     \ \_____\ \_____\      \ \_\ \ \_____\ \_____\ \_\ \_\ \_\\"\_\ \_____\ \_____\ \_____\ \_____\/\_____\ 
-      \/_____/\/_____/       \/_/  \/_____/\/_____/\/_/\/_/\/_/ \/_/\/_____/\/_____/\/_____/\/_____/\/_____/ 
-
-                              Font: Sub-Zero @ http://patorjk.com/software/taag
-
-
-
-    ----\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->   
-          
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="author" content="Evans & Chambers Technology, LLC">
-  <meta name="robots" content="index,follow,archive">
-  <meta name="description" content="At Evans & Chambers we deliver the technology and management solutions that empower businesses and government agencies to collaborate, share information and solve problems. With applied expertise in defense and intelligence, we understand the landscape our clients navigate. More, we approach each challenge via active dialogue, working with you side-by-side to accomplish your objectives. And the results speak for themselves. For us, success is measured in the seconds and dollars regained by each and every client.">
-  <meta property="og:image" content=""> <!-- RJE: put URL to the header background image here -->
-  <meta property="og:title" content="EC Technology, LLC">
-  <meta property="og:url" content="http://evanschambers.com/">
-  <meta property="og:site_name" content="EC Technology, LLC">
-  <meta property="og:type" content="website">
-
-  <!-- Bootstrap Core -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <!-- Bootstrap Optional theme -->
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-  <!-- Custom CSS -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <link rel="stylesheet" href="css/ec.css" media="screen" />
-<!--  <link rel="stylesheet" href="css/component.css" media="screen" />  -->
-</head>
+  <title>Contact Us | EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
+  <?php include 'includes/head.php'; ?>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
@@ -126,7 +75,7 @@ function validateFormMandatory($name, $email, $message, $subject) {
   <section id="our-clients" class="container-fluid">
       <div class="row">
           <div class="col-lg-12">
-          <h1>Fill out the contact form below and we'll be in touch.</h1>
+          <h1>Fill out the contact form below and we’ll be in touch.</h1>
           <img src="images/separator_flagstripes.png" />
           </div>
           <div class="col-lg-12">
@@ -138,13 +87,14 @@ function validateFormMandatory($name, $email, $message, $subject) {
 
   <!-- How we see our team? -->
   <section id="contact-form" class="container-fluid">
-      <form name="contactForm" method="post" action="contact.php" id="form">
+      <h4 style="color: green; text-align: center;"><?php echo $success_msg; ?></h4>
+      <form name="contactForm" method="post" action="contact.php" id="form" data-parsley-validate>
         <div class="row">
             <div class="col-md-4 col-sm-12">
-                <input type="text" placeholder="Name" name="name" class="col-xs-12" />
+                <input type="text" placeholder="Name" name="name" class="col-xs-12" required />
             </div>
             <div class="col-md-4 col-md-12">
-                <input type="text" placeholder="Email" name="email" class="col-xs-12" />
+                <input type="email" placeholder="Email" name="email" class="col-xs-12" required />
             </div>
             <div class="col-md-4">
                 <input type="text" placeholder="Phone" name="phone" class="col-xs-12" />
@@ -153,22 +103,22 @@ function validateFormMandatory($name, $email, $message, $subject) {
 
         <div class="row">
             <div class="col-md-12">
-                <input type="text" placeholder="Subject" name="subject" class="col-xs-12" style="<?php if($empty_subject == "true") { echo "background-color: red;"; } ?>" />
+                <input type="text" placeholder="Subject" name="subject" class="col-xs-12" required />
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-12">
-                <textarea placeholder="Message" name="message" class="col-xs-12"></textarea>
+                <textarea placeholder="Message" name="message" class="col-xs-12" required></textarea>
             </div>
         </div>
         
         <div class="row">
-            <a href="#" class="text-uppercase text-center button-box orange" onclick="document.getElementById('form').submit(); return false;">Submit</a>
+            <input type="submit" class="text-uppercase text-center button-box orange" value="Submit" />
         </div>
         <input type="hidden" name="submitContactForm" value="submitted" />
     </form>
-    <?php echo (string) $empty_subject; ?>
+
   </section>
     
   <section id="our-headquarters" class="container-fluid">
@@ -185,7 +135,9 @@ function validateFormMandatory($name, $email, $message, $subject) {
               </p>
           </div>
           <div class="col-md-6">
-              <img src="images/photo_map.png" />
+              <a href="https://www.google.com/maps/place/635+Florida+Avenue+NW+Washington+DC+20001">
+                <img src="images/photo_map.png" />
+              </a>
           </div>
       </div>
   </section>

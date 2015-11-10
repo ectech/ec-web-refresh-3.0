@@ -1,28 +1,14 @@
-/*@font-face {
-    font-family: 'EkMukta';
-
-    src: url('../fonts/Ek_Mukta/EkMukta-Regular.ttf') format('truetype');
-    src: url('../fonts/Ek_Mukta/EkMukta-Medium.ttf') format('truetype');
-    src: url('../fonts/Ek_Mukta/EkMukta-Bold.ttf') format('truetype');
-
-    src: url('../fonts/Ek_Mukta/EkMukta-Light.ttf') format('truetype');
-    src: url('../fonts/Ek_Mukta/EkMukta-SemiBold.ttf') format('truetype');
-    src: url('../fonts/Ek_Mukta/EkMukta-ExtraBold.ttf') format('truetype');
-    src: url('../fonts/Ek_Mukta/EkMukta-ExtraLight.ttf') format('truetype');
-} */
-
-
-
+/* moved this into the HTML files
 @font-face {
     font-family: 'EkMukta';
     src: url('../fonts/Ek_Mukta/EkMukta-Regular.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @font-face {
     font-family: 'EkMukta';
     src: url('../fonts/Ek_Mukta/EkMukta-Bold.ttf') format('truetype');
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
@@ -30,13 +16,13 @@
     font-family: 'EkMukta';
     src: url('../fonts/Ek_Mukta/EkMukta-ExtraLight.ttf') format('truetype');
     -webkit-font-smoothing: antialiased;
-    font-weight: 100;
-}
+    font-weight: 200;
+} */
 
 .ectext {
-    font-family: 'EkMukta';
-    font-style: normal;
-    font-weight: 100;
+    font-family: 'Ek Mukta', sans-serif;
+    /*font-style: normal; */
+    font-weight: 200;
 }
 
 .translucent {
@@ -60,7 +46,7 @@ a:hover {
 
 h1 {
     font-size: 55px; 
-    font-weight: 100;
+    font-weight: 200;
     color: white;
     margin: 15px 0 20px;
     text-align: center;
@@ -73,7 +59,7 @@ h1.dark {
 
 h2 {
     font-size: 35px; 
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 0 15px;
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
@@ -91,35 +77,47 @@ h3 {
     color: #f15c22;
     text-transform: uppercase;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     -webkit-font-smoothing: antialiased;
 }
 
 h4 {
     font-size:35px; 
-    font-weight: 100;   
+    font-weight: 200;   
 }
 a.button-underline {
     font-size: 20px; 
-    font-weight:600;
+    font-weight: 700;
     color: white;
     border-bottom: 3px solid white;
-    margin: 100px 0 0 0;
+    margin: 100px 0 50px 0;
     padding-bottom: 9px;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
 }
-a.button-box {
+
+a.button-underline:hover {
+    color: #ccc;
+}
+
+a.button-box, input.button-box {
     text-transform: uppercase;
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 700;
     color: white;
     border: 3px solid white;
     padding: 22px 40px;
     margin: 50px auto 20px;
     text-align: center;
     display: block;
-    width: 170px;
+    max-width: 170px;
+    width: 100%;
+    -webkit-transition: background 0.1s linear;
+    -moz-transition: background 0.1s linear;
+    -ms-transition: background 0.1s linear;
+    -o-transition: background 0.1s linear;
+    transition: background 0.1s linear;
 }
 
 a.button-box:hover {
@@ -138,6 +136,13 @@ a.orange:hover {
     color: white;
 }
 
+input.orange:hover {
+    background-color: #f15c22;
+    color: white;
+}
+
+
+
 p {
     font-size: 28px; 
     line-height: 44px;
@@ -147,12 +152,12 @@ p {
 p.small {
     font-size: 22px; 
     line-height: 32px;
-    padding-right: 80px;
+    xpadding-right: 40px;
 }
 
 section {
-    font-family: 'EkMukta';
-    font-weight: 100; 
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 200; 
     -webkit-font-smoothing: antialiased;
     padding: 80px 0;  
     width: 100%;
@@ -176,7 +181,7 @@ blockquote {
     padding: 55px 100px 65px;
     margin: 180px 0 150px;
     font-size: 70px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 80px;
     /* clip-path: inset(10px 20px 30px 40px); */
     -webkit-font-smoothing: antialiased;
@@ -187,12 +192,51 @@ blockquote {
     opacity: 0;
     -webkit-animation-duration: 0.4s;
     -webkit-animation-delay: 0.5s;
+    animation-duration: 0.4s;
+    animation-delay: 0.5s;
 }
 
 #blockquote {
     -webkit-animation-duration: 0.4s;
     -webkit-animation-delay: 0s;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
     opacity: 0;
+}
+
+#contract-8a-solesource {
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0.2s;
+    animation-duration: 0.4s;
+    animation-delay: 0.2s;
+}
+
+#contract-fbi-itsc {
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0.3s;
+    animation-duration: 0.4s;
+    animation-delay: 0.3s;
+}
+
+#contract-fbi-itsss {
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    animation-duration: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#contract-8a-stars2 {
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0.5s;
+    animation-duration: 0.4s;
+    animation-delay: 0.5s;
+}
+
+.pulse-animate {
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: 0.8s;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
 }
 
 blockquote#blockquote-blog {
@@ -202,12 +246,14 @@ blockquote#blockquote-blog {
     padding: 55px 100px 65px;
     margin: 180px 0 45px;
     font-size: 70px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 80px;
     /* clip-path: inset(10px 20px 30px 40px); */
     -webkit-font-smoothing: antialiased;
     -webkit-animation-duration: 0.4s;
     -webkit-animation-delay: 0s;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
 }
 
 
@@ -231,13 +277,8 @@ body#blog #content {
     top:0px;
 }
 
-body#job-posting #content {
+body#job-posting #content, body#contract #content, body#contact-us #content {
     top:140px;
-}
-
-body#contact-us #content {
-    
-    top: 140px;
 }
 
 header {
@@ -250,8 +291,8 @@ header {
     height: 140px;
     z-index: 10000;
     display: none;
-    font-family: 'EkMukta';
-    font-weight: 300;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -259,11 +300,8 @@ header a.eclogo img {
     width:295px;
     height: 52px;
     margin-top: 40px;
-    background: url(../images/logo_ec_white.png) no-repeat top left;
-}
-
-header ul.navbar {
-    padding-top: 40px;  
+    background: url(../images/logo_ec_white2x.png) no-repeat top left;
+    background-size: 295px 52px;
 }
 
 
@@ -274,7 +312,7 @@ canvas {
 }
 
 div#header {
-    padding: 40px 0 80px;
+    padding: 37px 0 80px;
     top:0;
     left: 0;
     position: fixed;
@@ -314,12 +352,12 @@ body#offerings section#top {
 }
 
 body#team-culture section#top {
-    background: url(../images/bg_header_culture.jpg) no-repeat top center fixed;
+    background: url(../images/bg_header_culture2.jpg) no-repeat top center fixed;
     background-size: cover;
 }
 
 body#resources section#top {
-    background: url(../images/bg_header_resources.jpg) no-repeat top center fixed;
+    background: url(../images/bg_header_resources2.jpg) no-repeat top center fixed;
     background-size: cover;
 }
 
@@ -361,12 +399,19 @@ a.eclogo img {
     width:295px;
     height: 52px;
     float: left;
-    background: url(../images/logo_ec_white.png) no-repeat top left;
-    background-size: ;
+    background: url(../images/logo_ec_white2x.png) no-repeat top left;
+    background-size: 295px 52px;
+    margin-top:3px;
 }
 
 section#job-post {
     color: #46555f;
+    
+}
+
+section#job-post li a {
+    color: #46555f;
+    text-decoration: underline;
     
 }
 
@@ -381,6 +426,11 @@ section#job-post div.job-info-box {
     padding: 40px;
     color: #46555f;
     font-size: 25px;
+}
+
+section#job-post div.job-info-box a {
+    color: #f15c22;
+    font-weight: 200;
 }
 
 section#job-post h3 {
@@ -400,6 +450,11 @@ section#job-post li {
     margin: 0 0 15px;
 }
 
+section#job-post div.job-info-box h3 {
+    margin-bottom: 30px;
+    
+}
+
 section#job-post div.job-info-box p {
     margin: 5px 0 25px;
     
@@ -411,20 +466,20 @@ section#job-post div.job-post-details p {
     margin-bottom: 25px;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 985px) {
+    blockquote {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 975px) {
     a.eclogo img {
         width:70px;  
     }
     
     header a.eclogo img {
         width:70px;  
-    }
-}
-
-@media only screen and (max-width: 985px) {
-    blockquote {
-        font-size: 60px;
-        line-height: 70px;
     }
 }
 
@@ -438,24 +493,42 @@ section#job-post div.job-post-details p {
     } 
 }
 
+
+
 section#top .row img {
     float:left;   
 }
+
+section#top ul.navbar {
+    margin-top: 0;
+}
+
 ul.navbar {
     float:right;
     color: #fff;
-    margin-top: 10px;
     padding:0;  
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     list-style: none;
+    margin-top: 37px;
 }
 
 ul.navbar li {
     float:left;
     padding: 8px 0;
-    margin-left: 25px;
+}
+
+ul.navlinks {
+    margin-top: 37px;
+}
+
+section#top ul.navlinks {
+    margin-top: 0;
+}
+
+ul.navlinks li {
+    margin: 10px 0 0 25px;
 }
 
 ul.navbar li.selected a {
@@ -471,12 +544,14 @@ ul.navbar a.cta {
     border: 1px solid white;
     margin-left: 18px;
     text-transform: uppercase;
-    font-weight:600;
+    font-weight: 700;
     padding: 8px 11px;
     font-size: 16px;
+    outline: none;
 }
 
-ul.navbar a.cta:hover {
+ul.navbar li a.cta:hover {
+    border: 1px solid white;
     background-color: white;
     color: #455560;
     text-decoration: none;
@@ -487,19 +562,17 @@ ul.navbar a.cta.selected {
     background-color: white;
     margin-left: 18px;
     text-transform: uppercase;
-    font-weight:600;
+    font-weight: 700;
     padding: 8px 11px;
     font-size: 16px;
     color: #455560;
 }
 
-div.hamburger {
+ul li.hamburger {
     float:right;   
     color: white;
     border: 3px solid white;
-    height: 50px;
-    width: 50px;
-    padding: 20px 20px;
+    padding: 8px 12px;
     display: none;
 }
 
@@ -519,12 +592,30 @@ section#top div.row img.star.blog {
     float:none;  
 }
 
-@media only screen and (max-width: 690px) {
-    ul.navbar {
+@media only screen and (max-width: 720px) {
+    ul.navlinks {
         display:none;
     }   
-    div.hamburger {
+    ul li.hamburger {
         display:block;   
+    }
+
+    a.eclogo img {
+        width:295px;  
+    }
+    
+    header a.eclogo img {
+        width:295px;  
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    a.eclogo img {
+        width:70px;  
+    }
+    
+    header a.eclogo img {
+        width:70px;  
     }
 }
 
@@ -543,7 +634,8 @@ section#promise img {
 }
 
 section#promise a.button-box {
-    width: 220px;  
+    max-width: 220px;  
+    width: 100%;
 }
 
 
@@ -551,11 +643,12 @@ section#promise a.button-box {
 
 section#our-offerings {
     background: url(../images/bg_two_grays.png) repeat-y top center;
+    padding-bottom: 10px; /* the nested UL has a large bottom padding so no need for much of a bottom padding on the section */
 }
 
 section#our-offerings ul {
     color:white;
-    margin: 30px 0 50px 0;
+    margin: 30px 0 100px 0;
     padding:0;
 }
 section#our-offerings ul li {
@@ -566,14 +659,16 @@ section#our-offerings ul li {
 
 section#our-offerings ul li.last {
     list-style: none;
-    margin:50px 0 20px;
+    margin:50px 0 50px;
 }
+
+
 
 
 /********** OUR CLIENTS *********/
 
 section#our-clients h1 {
-    color: #515151;
+    color: #46555f;
 }
 
 section#our-clients div img.logo {
@@ -584,24 +679,26 @@ section#our-clients div img.logo {
 section#our-clients div  {
     text-align: center;
     font-size: 20px;
-    color: #515151;
+    color: #46555f;
 }
 
 
 section#our-clients a.button-box {
-    width: 350px;
+    max-width: 350px;
+    width:100%;
 }
 
 /******** HUNGRY SECTION **********/
 
 section#hungry  {
-    background: #f15c22 url(../images/photo-girl-working-at-desk-wide.jpg) repeat-y top right; 
+    background: #f15c22 url(../images/photo-home-atwhiteboard3.jpg) repeat-y top right; 
     color: #fff;
     padding: 0;
 }
 
 section#hungry a.button-box {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     margin: 20px 0 80px;
 }
 
@@ -630,12 +727,12 @@ section#hungry h1 {
 /******** QUOTE SECTION **********/
 
 section#quote blockquote {
-    border: 1px solid #e3e8eb;
+    border: none;
     color:#455560; 
     padding: 65px 50px;
     margin:0 0 30px 0;
     font-size: 35px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 55px;
     clip-path: inset(10px 20px 30px 40px);
     -webkit-font-smoothing: antialiased;
@@ -649,17 +746,18 @@ section#quote blockquote {
     margin:0 auto; 
     background-color: #e3e8eb; 
     color: #f15c22; 
-    font-family: 'EkMukta'; 
-    font-weight: 100; 
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 200; 
     font-size: 142px; 
     border-radius: 50%; 
     line-height: 190px;
+    z-index: 10000;
 }
 
 /******** GET TO KNOW US SECTION **********/
 
 section#get-to-know  {
-    background: #46555f url(../images/photo-neighborhood-rowhomes-wide.jpg) no-repeat top left;
+    background: #46555f url(../images/photo_home_deskstill_narrow.jpg) no-repeat top left;
     color: #fff;
     padding: 0;
 }
@@ -670,7 +768,8 @@ section#get-to-know div.no-image {
 
 section#get-to-know a.button-box {
     font-weight: 800;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     padding: 20px 40px;
     margin: 20px 0 80px 60px;
 }
@@ -716,13 +815,20 @@ section#from-the-blog p {
 }
 
 section#from-the-blog a.button-box {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
 }
 
 /******** FOOTER **********/
 
-section#footer {
-    background-color: #46555f;    
+section#footer, body#blog section#footer {
+    background-color: white;   
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+body#offerings section#footer, body#team-culture section#footer, body#blog section#footer {
+    border-top: 1px solid #e3e8eb;
 }
 
 section#footer a, section#footer a:link, section#footer a:visited, section#footer a:hover {
@@ -731,28 +837,147 @@ section#footer a, section#footer a:link, section#footer a:visited, section#foote
     text-decoration:none;
 }
 
-section#footer ul {
-    list-style: none;
-    font-size: 14px;
-    font-weight: 300;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-section#footer ul li {
-    float:left;
-    margin: 0 15px 15px;    
+section#footer div#social-images {
+    margin-top: 15px;
 }
 
 section#footer a img {
+    padding: 20px 9px;
+}
 
-    float: right;
-    margin-right: 15px;
+section#footer a.button-box {
+    margin: 50px 0 20px;
+    max-width: 200px;
+    padding: 22px 25px;
+    float: none;
+}
+
+section#footer a.button-sign-up {
+    position: absolute; 
+    right: 15px;
+    text-align: center;
+    width: auto; 
+    background-color: #f15c22;
+    border-bottom: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 22px 25px;
+    height: 72px;
+    margin: 0;
+}
+
+section#footer div#sign-up-control {
+    text-align: left;
+    background-color: #f7f7f7;
+    width: 100%;
+    margin-top: 15px;
+}
+
+section#footer div#sign-up-control h4 {
+    height: 72px;
+    padding: 25px 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section#footer div#sign-up-control ul.parsley-errors-list {
+    display: none;
+}
+
+section#footer input {
+    text-align: left;
+    left: 0;
+    height: 72px;
+    width: 70%;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    background: transparent;
+    margin: 0;
+}
+
+body#contact-us section#footer input {
+    margin-top: 0;
+}
+
+section#footer p, body#blog section#footer p {
+    color: #455560;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+section#footer p.sign-up-label {
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 16px;
+    text-align: left;
+    display: none;
+}
+
+section#footer a.button-box {
+    margin:0;
+    padding: 22px 18px;
+    height: 72px;
+    border: none;
+    background-color: #f15c22;
+    max-width: none;
+    margin-top: 15px;
 }
 
 .img-link {
     text-decoration: none;
+}
+
+/*********** SUB-FOOTER ************/
+
+section#sub-footer {
+    font-size: 12px;
+    border-top: 1px solid #e3e8eb;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+section#sub-footer ul {
+    float: right;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+section#sub-footer ul li {
+    float:left;
+    margin: 0 15px 30px 0; 
+    padding-left: 0;
+    text-align: left;     
+}
+
+section#sub-footer ul li a {
+    color: #455560;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+section#sub-footer img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+section#sub-footer p, body#blog section#sub-footer p {
+    float: left;
+    font-size: 12px;
+    margin: 0 0 20px 0;
+    line-height: 22px;
 }
 
 /*********** OFFERINGS ************/
@@ -766,25 +991,40 @@ section#services p {
     margin-bottom: 80px;
 }
 
-section#services div.left {
-    border-right: 1px solid gray;   
+section#services div div {
+    border-top: 1px solid gray;  
+    padding: 80px 60px 40px 60px;
 }
 
-section#services div.col-lg-6 {
-    border-bottom: 1px solid gray; 
-    height: 450px;
-    padding: 60px;
+section#services div.one, section#services div.two { /* no border on the top row - this is modified via media queries */
+    border-top: none; 
+    padding: 80px 60px 40px 60px;
 }
 
-section#services div.no-bottom {
-    border-bottom: none;
+section#services div.one, section#services div.three, section#services div.five, section#services div.seven {
+    border-right: 1px solid gray;
 }
+
+section#services div img {
+    width: 100%;
+    max-width: 240px;
+}
+
+section#services div h1 {
+    font-size: 40px;
+}
+
 
 /*********** OUR APPROACH ************/
 
 section#our-approach div.col-md-4 {
     text-align:left;
-    padding: 0 80px 40px 0;
+    padding: 0 20px 40px 20px;
+}
+
+section#our-approach div.col-md-4 img {
+    width: 100%;
+    max-width: 282px;
 }
 
 section#our-approach h1 {
@@ -794,19 +1034,24 @@ section#our-approach h1 {
 section#our-approach p  {
     font-size: 20px;
     color: #515151;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 30px;    
 }
 
 /*********** OUR TEAM ************/
 
 section#our-team h1 {
-    color: #515151;
+    color: #46555f;
 }
 
 section#our-team div.col-md-6 {
     text-align:left;
-    padding: 0 80px 40px 0;
+    padding: 0 40px 40px 40px;
+}
+
+section#our-team div.col-md-6 img {
+    width: 100%;
+    max-width: 317px;
 }
 
 section#our-team div.col-md-12 {
@@ -815,16 +1060,17 @@ section#our-team div.col-md-12 {
 
 section#our-team div.col-md-6 h1 {
     text-align: left; 
-    color: #515151;
+    color: #46555f;
     margin-bottom: 30px;
 }
 
 section#our-team a.button-box {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
 }
 
 body#team-culture section#photos {
-    background: #455560 url(../images/photo_culture_combined.jpg) no-repeat center center;
+    background: #455560 url(../images/photo_culture_combined2.jpg) no-repeat center center;
     height: 600px;
 }
 
@@ -852,6 +1098,32 @@ section#contact-form {
     color: #455560;
 }
 
+section#contact-form input.button-box {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid white;
+    padding: 22px 40px;
+    margin: 50px auto 20px;
+    text-align: center;
+    display: block;
+    max-width: 170px;
+    width: 100%;
+    background-color: transparent;
+}
+
+section#contact-form input.orange {
+    color: #f15c22;
+    border-color: #f15c22;
+}
+
+
+section#contact-form input.orange:hover {
+    background-color: #f15c22;
+    color: white;
+}
+
 section#case-studies div.col-md-4 {
     background-color: white;
     height: 300px;
@@ -867,14 +1139,25 @@ section#case-studies div.col-md-4 p {
     line-height: 37px;
 }
 
-div.block {
+section#browse-contracts a {
+    text-decoration: none;
+    display: block;
+}
+
+a div.block {
     padding: 30px;  
     margin: 15px 0;
     background-color:#E3E8EB;
     color: #455560;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover div.block {
+    background-color: #ced2d8;
+    text-decoration: none;
 }
 
 section#white-papers div.block {
@@ -883,14 +1166,16 @@ section#white-papers div.block {
     text-transform: none;
     text-align: left;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 700;
     
 }
+
+/******* Contact Form Styles ***********/
 
 body#contact-us input, body#contact-us textarea  {
     border: none;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 15px 18px;
     margin-top: 20px;
 }
@@ -899,8 +1184,25 @@ body#contact-us textarea {
     height: 250px;   
 }
 
+/********* PARSLEY STYLES **********/
+input.parsley-error, select.parsley-error, textarea.parsley-error {
+    background-color: #F2DEDE;  
+}
+
+ul.parsley-errors-list {
+    list-style: none;   
+    padding: 0;
+    margin: 0;
+}
+
+ul.parsley-errors-list li {
+    padding: 0;
+    margin: 0;
+}
+
 body#aboutus a.button-box {
-    width: 425px; 
+    max-width: 425px; 
+    width: 100%;
 }
 
 section#white-papers {
@@ -937,7 +1239,7 @@ section#blog-categories {
 ul.category-nav {
     display:inline-table; /* to get the UL to be centered */
     list-style: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
     margin: 0 auto;
@@ -979,7 +1281,7 @@ body#blog p {
     color: #46555f;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 div.blog-attributes {
@@ -988,19 +1290,19 @@ div.blog-attributes {
 
 span.author {
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 400;
     margin-right: 30px;
     margin-bottom: 15px;
 }
 
 span.author a {
-    font-weight: 600;
+    font-weight: 700;
     color: #46555f;
 }
 
 span.date-posted {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     color: #b0b7bc;
     margin-right:30px;
     margin-bottom: 15px;
@@ -1009,7 +1311,7 @@ span.date-posted {
 span.category {
     display: inline-table;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: #46555f;
     margin: 10px 15px 10px 0;
     padding: 8px 15px;
@@ -1026,6 +1328,11 @@ span.blog-separator {
     display: block;
     margin: 40px 0 0 0;
 
+}
+
+section#from-the-blog article a:hover {
+
+    text-decoration: none;
 }
 
 /*********** CASE STUDY ************/
@@ -1060,34 +1367,271 @@ section#job-listings div.arrowblock {
     background-color:#E3E8EB;
     color: #455560;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 section#job-listings p { 
     line-height: 28px; 
-    font-weight: 100;
+    font-weight: 200;
     font-size:20px;
+    text-align: right;
+}
+
+section#job-listings p.col-sm-3 { 
     text-align: right;
 }
 
 section#job-listings p a {
     color: #46555f;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     
-}
-
-section#job-listings div.row p.col-lg-3 {
-    text-align: right;
 }
 
 section#job-listings div.blog-nav-prev, section#job-listings div.blog-nav-next {
     margin-top:40px;
 }
 
+section#job-listings div.col-sm-12 {
+    text-align: center; 
+}
+
 section#what-its-like {
     background-color: #f7f7f7;   
+}
+
+@media only screen and (max-width: 1108px) {
+
+    section#sub-footer ul {
+        float:left;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    section#hungry {
+        background-image: none;
+        text-align: center;
+    }
+
+    section#hungry p {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    section#hungry h1 {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    section#hungry a.button-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#get-to-know  {
+        background-image: none;
+    }
+
+    section#get-to-know h1, section#get-to-know p {
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    section#get-to-know a.button-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body#aboutus section#photos {
+        background-position: 0px 0px;
+    }
+
+    body#team-culture section#photos {
+        background-position: -225px 0px;
+    }
+
+    section#our-team div.col-md-6 {
+        padding: 20px 0 40px 0;
+    }
+
+    section#our-team div.col-md-6 h1 {
+        text-align: center;
+    }
+
+    section#services div.row div.col-md-6 {
+        border: none;  
+        border-bottom: 1px solid gray; 
+    }
+
+    section#services div.row div.eight {
+        border: none;  
+    }
+
+    section#sub-footer div {
+        text-align: left;
+    }
+
+    section#sub-footer ul {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    section#our-offerings {
+        background-image: none;
+        background-color: #5b6c77;
+    }
+
+    body#aboutus section#photos {
+        background-position: 0px 0px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    blockquote {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 30px;
+    }
+
+    section#footer input::-webkit-input-placeholder {
+       position: relative;
+       left: -10000px;
+    }
+
+    section#footer input:-moz-placeholder { /* Firefox 18- */
+       position: relative;
+       left: -10000px;
+    }
+
+    section#footer input::-moz-placeholder {  /* Firefox 19+ */
+       position: relative;
+       left: -10000px; 
+    }
+
+    section#footer input:-ms-input-placeholder {  
+       position: relative;
+       left: -10000px; 
+    }
+
+    section#footer p.sign-up-label {
+        display: block;
+    }
+
+}
+
+/* iphone 6 plus */
+@media only screen and (max-width: 414px) {
+    blockquote {
+        font-size: 35px;
+        line-height: 45px;
+        padding: 30px;
+        margin-top: 150px;
+    }
+
+
+    body#home #content {
+      top: 680px;
+    }
+
+    body#team-culture #content {
+      top: 450px;
+    }
+    body#team-culture blockquote {
+        margin-top: 150px;
+    }
+
+    body#aboutus #content {
+      top: 550px;
+    }
+    body#aboutus blockquote {
+        margin-top: 150px;
+    }
+
+    body#offerings #content {
+      top: 550px;
+    }
+    body#offerings blockquote {
+        margin-top: 150px;
+    }
+
+    section#services div.col-lg-6 {
+        border-top: none;  
+        padding: 20px 10px 20px 10px;
+    }
+
+    .row {
+        padding: 0 15px;
+    }
+
+    body#team-culture section#photos {
+        background-position: -450px 0px;
+    }
+
+    section#our-team div.col-md-6 {
+        text-align:left;
+        padding: 40px 0 0 0;
+    }
+
+    section#our-headquarters h1 {
+        font-size: 40px;
+    }
+
+    section#our-headquarters p {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    section#footer a.button-sign-up {
+        padding: 15px 10px;
+        height: 60px;
+    }
+
+    section#footer input {
+        padding: 15px 10px;
+        height: 60px;
+    }
+
+    section#footer a.button-box {
+        padding: 15px 10px;
+        height: 60px;
+    }
+
+    
+}
+
+/* iphone 6 portrait */
+@media only screen and (max-width: 375px) {
+    blockquote {
+        font-size: 35px;
+        line-height: 45px;
+        padding: 30px;
+        margin-top: 130px;
+    }
+
+    body#home #content {
+      top: 620px;
+    }
+}
+
+
+/* iphone 5 portrait */
+@media only screen and (max-width: 320px) {
+    blockquote {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 30px;
+        margin-top: 80px;
+    }
+
+    body#home #content {
+      top: 530px;
+    }
 }
 
 /*********** HELPERS ************/
@@ -1096,7 +1640,105 @@ section#what-its-like {
   text-decoration: underline;
 }
 .text-bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
+/*********** SLIDEOUT.JS STYLES *************/
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: #46555f;
+}
+
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  left: auto; /* needed to make the panel slide-out from the right side */
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+/******** CUSTOM SLIDEOUT STYLES *******/
+
+nav#menu ul {
+    float: left; 
+    text-align: left; 
+    list-style: none; 
+    font-size: 32px; 
+    margin: 40px 0 0 20px; 
+    padding: 0; 
+    font-weight: 200;
+}
+nav#menu ul li {
+    padding: 0 0 15px 0;
+}
+
+.close-toggle-button {
+    padding: 8px 12px; 
+    border: 3px solid white; 
+    float: right; 
+    margin: 40px 40px 0 0;
+}
+
+/********* Intro animation ***********/
+#initial-overlay {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #455560;
+    z-index: 10000;
+}
+
+/*********** Wordpress Themes *************/
+
+body#blog p a img {
+    margin: 10px;
+}
+
+body#blog p a img.alignleft {
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+body#blog p a img.alignright {
+    float:right;
+    margin: 0 0 20px 20pz;
+}
+
+body#blog p a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body#blog p a img.aligncenter-maxwidth {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 995px;
+    width: 100%;
+}

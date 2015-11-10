@@ -35,27 +35,50 @@
         else if(strpos($url, 'offerings.php') !== false) {
             $offerings = ' class="selected"';
         }
-        else if(strpos($url, 'blog.php') !== false) {
+        else if(strpos($url, 'blog') !== false) {
             $blog = ' class="selected"';
         }
         
         $nav = '<div class="row">
                   <a href="index.php" class="eclogo"><img src="images/spacer.gif" /></a><!-- width:295 height: 52 -->
-                  <ul class="pull-right navbar">
+                  <ul class="pull-right navbar navlinks">
                       <li ' . $aboutus . '><a href="aboutus.php">About</a></li>
                       <li' . $offerings . '><a href="offerings.php">Offerings</a></li>
-                      <li' . $resources . '><a href="resources.php">Resources</a></li>
+                      <!-- <li' . $resources . '><a href="resources.php">Resources</a></li> -->
                       <li' . $culture . '><a href="culture.php">Team Culture</a></li>
-                      <li' . $blog . '><a href="blog.php">Blog</a></li>
+                      <li' . $blog . '><a href="/blog">Blog</a></li>
                       <li><a href="contact.php" class="cta ' . $contact . '">Let\'s Build Together</a></li>
                   </ul>
-                  <div class="hamburger pull-right">MENU</div>
+                  <ul class="pull-right navbar">
+                    <li class="hamburger toggle-button"><img src="images/icon_hamburger2x.png" width="30" height="29"/></li>
+                  </ul>
                 </div>';
         
         $blockquote_id = 'blockquote';
         if(strpos($url, 'blog.php') !== false) {
           $blockquote_id = 'blockquote-blog';
         }
+
+        // this is for the slide out navigation
+        echo '<div id="initial-overlay"></div>
+              <nav id="menu">
+                    <div class="close-toggle-button">
+                      <img src="images/icon_letterx2x.png" width="30" height="29" class="toggle-button"/>
+                    </div>
+                    <br class="clearfix" />
+                      <ul>
+                        <li ' . $aboutus . '><a href="aboutus.php">About</a></li>
+                        <li' . $offerings . '><a href="offerings.php">Offerings</a></li>
+                        <!-- <li' . $resources . '><a href="resources.php">Resources</a></li> -->
+                        <li' . $culture . '><a href="culture.php">Team Culture</a></li>
+                        <li' . $blog . '><a href="/blog">Blog</a></li>
+                        <li><a href="contact.php" class="cta ' . $contact . '">Contact</a></li>
+                    </ul>
+                    </div>
+                </nav>
+
+                <main id="panel">
+                    ';
         
         echo '
             <!-- Affix Banner - hidden until scrolled down -->
@@ -69,7 +92,7 @@
               </div>
               <div class="row">
                   <blockquote id="' . $blockquote_id . '"><span id="js-rotating">' . $tagline . '</span></blockquote>';
-        if(strpos($url, 'blog.php') !== false) {
+        if(strpos($url, 'blog') !== false) {
           echo '  <img src="images/icon_star_big_gray2x.png" class="star blog" width="27">';
         } else {
           echo '  <img src="images/icon_star_big_white.png" class="star">';
@@ -78,23 +101,8 @@
           echo '
                   <canvas width="1000" height="600" id="canvas" style="position:absolute"></canvas>
               </div> ';
+          
         
-        if(strpos($url, 'blog.php') !== false) {
-          echo ' <div class="row"><div class="col-lg-10 col-lg-offset-1"><ul class="category-nav">
-                <li class="cat-item-all"><a href="#">All</a></li>
-                <li><a href="#">Commentary</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Commentary</a></li>
-                <li><a href="#">Events Development</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Commentary</a></li>
-                <li><a href="#">Events Development</a></li>
-                <li><a href="#" class="last">Technology</a></li>
-              </ul></div></div>';
-        }
         echo '</section>';
     }
 

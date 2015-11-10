@@ -1,62 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
-    
-    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\--                   
-
-
-
-
-     ______  ______       ______  ______  ______  __  __  __   __  ______  __      ______  ______  __  __    
-    /\  ___\/\  ___\     /\__  _\/\  ___\/\  ___\/\ \_\ \/\ "-.\ \/\  __ \/\ \    /\  __ \/\  ___\/\ \_\ \   
-    \ \  __\\ \ \____    \/_/\ \/\ \  __\\ \ \___\ \  __ \ \ \-.  \ \ \/\ \ \ \___\ \ \/\ \ \ \__ \ \____ \  
-     \ \_____\ \_____\      \ \_\ \ \_____\ \_____\ \_\ \_\ \_\\"\_\ \_____\ \_____\ \_____\ \_____\/\_____\ 
-      \/_____/\/_____/       \/_/  \/_____/\/_____/\/_/\/_/\/_/ \/_/\/_____/\/_____/\/_____/\/_____/\/_____/ 
-
-                              Font: Sub-Zero @ http://patorjk.com/software/taag
-
-
-
-    ----\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->   
-          
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="author" content="Evans & Chambers Technology, LLC">
-	<meta name="robots" content="index,follow,archive">
-	<meta name="description" content="At Evans & Chambers we deliver the technology and management solutions that empower businesses and government agencies to collaborate, share information and solve problems. With applied expertise in defense and intelligence, we understand the landscape our clients navigate. More, we approach each challenge via active dialogue, working with you side-by-side to accomplish your objectives. And the results speak for themselves. For us, success is measured in the seconds and dollars regained by each and every client.">
-  <meta property="og:image" content=""> <!-- RJE: put URL to the header background image here -->
-	<meta property="og:title" content="EC Technology, LLC">
-	<meta property="og:url" content="http://evanschambers.com/">
-  <meta property="og:site_name" content="EC Technology, LLC">
-	<meta property="og:type" content="website">
-
-  <!-- Bootstrap Core -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <!-- Bootstrap Optional theme -->
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-  <!-- Custom CSS -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<link rel="stylesheet" href="css/ec.css" media="screen" />
-<!--  <link rel="stylesheet" href="css/component.css" media="screen" />  -->
-</head>
+  <title>Resources | EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
+  <?php include 'includes/head.php'; ?> 
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 

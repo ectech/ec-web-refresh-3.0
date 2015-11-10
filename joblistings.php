@@ -50,6 +50,9 @@
   <link href="css/scrolling-nav.css" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
 
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -76,82 +79,82 @@
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Big Data Engineer, TS with poly required. Chantilly, VA</a></p>
-        <p class="col-lg-3 text-right">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Big Data Engineer, TS with poly required. Chantilly, VA</a></p>
+        <p class="col-sm-3 text-right">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Data Correlation Engineer - TS/SCI with poly required.<br/>Chantilly, VA.</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Data Correlation Engineer - TS/SCI with poly required.<br/>Chantilly, VA.</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Database Developer</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Database Developer</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Database Engineer - ETL</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Database Engineer - ETL</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Deputy Program Manager</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Deputy Program Manager</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">InfoSec Systems Engineer</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">InfoSec Systems Engineer</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Big Data Engineer, TS with poly required. Chantilly, VA</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Big Data Engineer, TS with poly required. Chantilly, VA</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php"> Correlation Engineer - TS/SCI with poly required.<br/>Chantilly, VA</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php"> Correlation Engineer - TS/SCI with poly required.<br/>Chantilly, VA</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Database Developer</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Database Developer</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">InfoSec Systems Engineer</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">InfoSec Systems Engineer</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Deputy Program Manager</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Deputy Program Manager</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-        <p class="col-lg-offset-1 col-lg-7"><a href="job-posting.php">Database Engineer - ETL</a></p>
-        <p class="col-lg-3">Information Technology</p>
+        <p class="col-sm-offset-1 col-sm-7"><a href="job-posting.php">Database Engineer - ETL</a></p>
+        <p class="col-sm-3">Information Technology</p>
       </div>
 
       <div class="row">
-          <div class="col-lg-7 col-lg-offset-1 text-left blog-nav-prev">
+          <div class="col-xs-7 col-xs-offset-1 text-left blog-nav-prev">
             <a href="#">
               &nbsp;
             </a>
           </div>
-          <div class="col-lg-3 blog-nav-next">
+          <div class="col-xs-3 blog-nav-next">
             <a href="#">
               &nbsp;
             </a>
           </diV>
       </div>
       <div class="row">
-        <p class="col-lg-10 col-lg-offset-1" style="border-top:1px solid #ccc;padding-top:25px;margin-top:30px; line-height: 38px;" >Evans &amp; Chambers Technology participates in the E-Verify Program, which is an
+        <p class="col-lg-10 col-sm-offset-1" style="border-top:1px solid #ccc;padding-top:25px;margin-top:30px; line-height: 38px;" >Evans &amp; Chambers Technology participates in the E-Verify Program, which is an
           internet-based system that allows businesses to determine the eligibility of their employees
           to work in the United States.</p>
-        <p class="col-lg-10 col-lg-offset-1">
+        <p class="col-lg-10 col-sm-offset-1">
           <img src="images/applicant-stack.jpg" />
         </p>
 

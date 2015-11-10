@@ -1,62 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
-    
-    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\--                   
-
-
-
-
-     ______  ______       ______  ______  ______  __  __  __   __  ______  __      ______  ______  __  __    
-    /\  ___\/\  ___\     /\__  _\/\  ___\/\  ___\/\ \_\ \/\ "-.\ \/\  __ \/\ \    /\  __ \/\  ___\/\ \_\ \   
-    \ \  __\\ \ \____    \/_/\ \/\ \  __\\ \ \___\ \  __ \ \ \-.  \ \ \/\ \ \ \___\ \ \/\ \ \ \__ \ \____ \  
-     \ \_____\ \_____\      \ \_\ \ \_____\ \_____\ \_\ \_\ \_\\"\_\ \_____\ \_____\ \_____\ \_____\/\_____\ 
-      \/_____/\/_____/       \/_/  \/_____/\/_____/\/_/\/_/\/_/ \/_/\/_____/\/_____/\/_____/\/_____/\/_____/ 
-
-                              Font: Sub-Zero @ http://patorjk.com/software/taag
-
-
-
-    ----\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->   
-          
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="author" content="Evans & Chambers Technology, LLC">
-	<meta name="robots" content="index,follow,archive">
-	<meta name="description" content="At Evans & Chambers we deliver the technology and management solutions that empower businesses and government agencies to collaborate, share information and solve problems. With applied expertise in defense and intelligence, we understand the landscape our clients navigate. More, we approach each challenge via active dialogue, working with you side-by-side to accomplish your objectives. And the results speak for themselves. For us, success is measured in the seconds and dollars regained by each and every client.">
-  <meta property="og:image" content=""> <!-- RJE: put URL to the header background image here -->
-	<meta property="og:title" content="EC Technology, LLC">
-	<meta property="og:url" content="http://evanschambers.com/">
-  <meta property="og:site_name" content="EC Technology, LLC">
-	<meta property="og:type" content="website">
-
-  <!-- Bootstrap Core -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <!-- Bootstrap Optional theme -->
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-  <!-- Custom CSS -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<link rel="stylesheet" href="css/ec.css" media="screen" />
-<!--  <link rel="stylesheet" href="css/component.css" media="screen" />  -->
-</head>
+  <title>About Us | EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
+  <?php include 'includes/head.php'; ?>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
@@ -86,7 +32,7 @@
             to advise them on the latest trends affecting their problem space, while innovating new
             solutions from existing customer investments.</p>
           <div class="clearfix"></div>
-          <a href="offerings.html" class="text-uppercase button-box orange">learn more about our offerings</a>
+          <a href="offerings.php" class="text-uppercase button-box orange">learn more about our offerings</a>
       </div>
   </section>
 
@@ -102,29 +48,20 @@
       </div>
       
       <div class="row">
-          <div class="col-md-5 col-md-offset-1">
-              <div class="block">GSA - 8(A) STARS II GWAC</div>
+          <div class="col-sm-5 col-sm-offset-1">
+              <a href="contract-8a-solesource.php" id="contract-8a-solesource"><div class="block">8(A) Sole Source</div></a>
           </div>
-          <div class="col-md-5">
-              <div class="block">ARMY INSCOM - OMNIBUS III</div>
-          </div>
-      </div>
-      
-      <div class="row">
-          <div class="col-md-5 col-md-offset-1">
-              <div class="block">INTELLIGENCE COMMUNITY - ISIS II</div>
-          </div>
-          <div class="col-md-5">
-              <div class="block">HUBZONE</div>
+          <div class="col-sm-5">
+              <a href="contract-fbi-itsc.php" id="contract-fbi-itsc"><div class="block">FBI - ITSC</div></a>
           </div>
       </div>
       
       <div class="row">
-          <div class="col-md-5 col-md-offset-1">
-              <div class="block">FBI - ITSSS</div>
+          <div class="col-sm-5 col-sm-offset-1">
+              <a href="contract-fbi-itsss.php" id="contract-fbi-itsss"><div class="block">FBI - IT Triple S</div></a>
           </div>
-          <div class="col-md-5">
-              <div class="block">CORPORATE MENTOR/PROTéGé PROGRAMS</div>
+          <div class="col-sm-5">
+              <a href="contract-8a-stars2.php" id="contract-8a-stars2"><div class="block">8(a) STARS II</div></a>
           </div>
       </div>
   </section>
@@ -172,22 +109,28 @@
 
       <div class="row">
           <div class="col-sm-12">
-              <img src="images/icon_shawdc_star.png" style="margin-top:-200px;margin-bottom:50px;">
+              <img src="images/icon_shawdc_star.png" style="margin-top:-200px;margin-bottom:50px;" class="pulse-animate">
           </div>
-          <h1>We're invested in its future</h1>
+          <h1>We’re invested in its future</h1>
           <div class="col-sm-12">
               <img src="images/icon_star_small_white.png">
           </div>
             <p class="col-sm-12">Community involvement and citizenship are more than just nice words; they require an
-              investment<br/> of time and resources. At EC, we attend civic events, provide jobs to the
-              local community, recruit<br/> interns from Howard University and do our utmost to be a
-              responsible neighbor and good citizen.<br/><br/></p>
+              investment of time and resources. At EC, we attend civic events, provide jobs to the
+              local community, recruit interns from universities and do our utmost to be a
+              responsible neighbor and good citizen.</p>
           
       </div>
   </section>
 
   <!-- Footer Section -->
   <?php include 'includes/footer.php'; echoFooter(140); ?>
+
+  <script src="js/jquery.easing.min.js"></script>
+  <script>
+
+  </script>
+
 
 </body>
 </html>

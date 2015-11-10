@@ -1,74 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
-    
-    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\--                   
-
-
-
-
-     ______  ______       ______  ______  ______  __  __  __   __  ______  __      ______  ______  __  __    
-    /\  ___\/\  ___\     /\__  _\/\  ___\/\  ___\/\ \_\ \/\ "-.\ \/\  __ \/\ \    /\  __ \/\  ___\/\ \_\ \   
-    \ \  __\\ \ \____    \/_/\ \/\ \  __\\ \ \___\ \  __ \ \ \-.  \ \ \/\ \ \ \___\ \ \/\ \ \ \__ \ \____ \  
-     \ \_____\ \_____\      \ \_\ \ \_____\ \_____\ \_\ \_\ \_\\"\_\ \_____\ \_____\ \_____\ \_____\/\_____\ 
-      \/_____/\/_____/       \/_/  \/_____/\/_____/\/_/\/_/\/_/ \/_/\/_____/\/_____/\/_____/\/_____/\/_____/ 
-
-                              Font: Sub-Zero @ http://patorjk.com/software/taag
-
-
-
-    ----\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->   
-          
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="author" content="Evans & Chambers Technology, LLC">
-	<meta name="robots" content="index,follow,archive">
-	<meta name="description" content="At Evans & Chambers we deliver the technology and management solutions that empower businesses and government agencies to collaborate, share information and solve problems. With applied expertise in defense and intelligence, we understand the landscape our clients navigate. More, we approach each challenge via active dialogue, working with you side-by-side to accomplish your objectives. And the results speak for themselves. For us, success is measured in the seconds and dollars regained by each and every client.">
-  <meta property="og:image" content=""> <!-- RJE: put URL to the header background image here -->
-	<meta property="og:title" content="EC Technology, LLC">
-	<meta property="og:url" content="http://evanschambers.com/">
-  <meta property="og:site_name" content="EC Technology, LLC">
-	<meta property="og:type" content="website">
-
-  <!-- Bootstrap Core -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <!-- Bootstrap Optional theme -->
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-  <!-- Custom CSS -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<link rel="stylesheet" href="css/ec.css" media="screen" />
-<!--  <link rel="stylesheet" href="css/component.css" media="screen" />  -->
-</head>
+  <title>Team Culture | EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
+  <?php include 'includes/head.php'; ?>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="team-culture" class="ectext">
     
-    <?php include 'includes/header.php'; echoNavigation('Let\'s go backstage.'); ?>
+    <?php include 'includes/header.php'; echoNavigation('Let’s go backstage.'); ?>
   
   <div id="content">
   <!-- Quality Section -->
   <section id="our-clients" class="container-fluid">
       <div class="row">
-          <h1>At the end of the day, a company's quality is it's team.</h1>
+          <h1>At the end of the day, a company’s quality is it’s team.</h1>
           <img src="images/separator_flagstripes.png" />
           <div class="clearfix"/>
           <br/>
@@ -88,54 +34,51 @@
           <br/>
       </div>
       <div class="row">
-          <div class="col-md-12">
-              <div class="col-md-6" style="text-align: center; padding:40px 0;">
-                <img src="images/icon_culture_circle_gear.png" />
-              </div>
-              <div class="col-md-6">
-                <h1>Work for yourself.</h1>
-                <p>Most of the time, our employees aren’t working in our offices. They’re on-site with our clients, often collaborating with third-party organizations in the process.
-    This means our people aren’t just the mouthpiece of EC; they’re also our hands and feet. We look for candidates who own what they do, who take responsibility for the results they deliver. People who, like entrepreneurs, use their own imagination to get the job done.</p>
-              </div>
+          <div class="col-md-6" style="text-align: center; padding:40px 0;">
+            <img src="images/icon_culture_circle_gear.png" />
           </div>
-          
-          <div class="col-md-12">
-              <div class="col-md-6">
-                <h1>Ask:does it serve the client?</h1>
-                <p>Customer service is one of those things people like to talk about... because it matters. At EC, we think cool ideas are great, but if it’s going to fly, it has to benefit the client.</p>
-              </div>
-              <div class="col-md-6">
-                <h1>Say what you do, do what you say.</h1>
-                <p>No surprises here. We’re talking accountability and professionalism, plain and simple.</p>
-              </div>
+          <div class="col-md-6">
+            <h1>Work for yourself.</h1>
+            <p>Most of the time, our employees aren’t working in our offices. They’re on-site with our clients, often collaborating with third-party organizations in the process.
+This means our people aren’t just the mouthpiece of EC; they’re also our hands and feet. We look for candidates who own what they do, who take responsibility for the results they deliver. People who, like entrepreneurs, use their own imagination to get the job done.</p>
           </div>
+      </div>
           
-          <div class="col-md-12">
-              <div class="col-md-6">
-                <h1>Make friends with your team.  </h1>
-                <p>It’s important to gel with your team when you’re collaborating at a client site. So we’ve put team-building at the core of our company culture. From wilderness ropes courses to competitive cooking lessons, we hold volunteer-planned, company-sponsored events several times a year. We also do regular happy hours, quarterly dinners at fine restaurants, an annual summer picnic and a holiday party.</p>
-              </div>
+      <div class="row">
+          <div class="col-md-6">
+            <h1>Ask:does it serve the client?</h1>
+            <p>Customer service is one of those things people like to talk about... because it matters. At EC, we think cool ideas are great, but if it’s going to fly, it has to benefit the client.</p>
+          </div>
+          <div class="col-md-6">
+            <h1>Say what you do, do what you say.</h1>
+            <p>No surprises here. We’re talking accountability and professionalism, plain and simple.</p>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-6">
+            <h1>Make friends with your team.  </h1>
+            <p>It’s important to gel with your team when you’re collaborating at a client site. So we’ve put team-building at the core of our company culture. From wilderness ropes courses to competitive cooking lessons, we hold volunteer-planned, company-sponsored events several times a year. We also do regular happy hours, dinners at fine restaurants, summer picnics and holiday parties.</p>
+          </div>
+          <div class="col-md-6">
+            <h1>Stay hungry, keep learning.</h1>
+            <p>Every year, we invest generously in paid training opportunities for our employees. We also partner with professional training companies for technical and non-technical team members, from IT to HR.
+You’re not just a cog in the wheel here; at EC, you have access to executive management, the leverage to present ideas and be heard, and continual opportunities to expand your skill set by contributing to projects that interest you.<br/><br/><br/></p>
+          </div>
+      </div>
 
-              <div class="clearfix"/>
-              <div class="col-md-6">
-                <h1>Stay hungry, keep learning.</h1>
-                <p>Every year, we invest generously in paid training opportunities for our employees. We also partner with professional training companies for technical and non-technical team members, from IT to HR.
-    You’re not just a cog in the wheel here; at EC, you have access to executive management, the leverage to present ideas and be heard, and continual opportunities to expand your skill set by contributing to projects that interest you.<br/><br/><br/></p>
-              </div>
+      <div class="row">
+          <div class="col-md-6">
+            <h1>Live your zeal. Do you love what you do?  Good: we look for that.</h1>
           </div>
-
-          <div class="col-md-12">
-              <div class="col-md-6">
-                <h1>Live your zeal. Do you love what you do?  Good: we look for that.</h1>
-              </div>
-              <div class="col-md-6" style="text-align: center; padding:0;">
-                <img src="images/icon_culture_circle_honeycomb.png" />
-              </div>
+          <div class="col-md-6" style="text-align: center; padding:0;">
+            <img src="images/icon_culture_circle_honeycomb.png" />
           </div>
-          
-          <div class="col-lg-12">
-              <a href="joblistings.php" class="text-center button-box orange">Explore Job Listings</a>
-          </div>
+      </div>
+      
+      <div class="col-lg-12">
+          <a href="http://evanschambers.applicantstack.com/x/openings" class="text-center button-box orange">Explore Job Listings</a>
+      </div>
           
       </div>
   </section>
