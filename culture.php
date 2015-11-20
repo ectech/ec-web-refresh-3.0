@@ -14,7 +14,7 @@
   <!-- Quality Section -->
   <section id="our-clients" class="container-fluid">
       <div class="row">
-          <h1>At the end of the day, a company’s quality is it’s team.</h1>
+          <h1>At the end of the day, a company’s quality is its team.</h1>
           <img src="images/separator_flagstripes.png" />
           <div class="clearfix"/>
           <br/>
