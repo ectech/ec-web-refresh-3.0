@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="testScript.js"></script>
   <title>Team Culture | EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
   <?php include 'includes/head.php'; ?>
 
@@ -78,11 +79,366 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
       
       <div class="col-lg-12">
           <a href="http://evanschambers.applicantstack.com/x/openings" class="text-center button-box orange">Explore Job Listings</a>
-      </div>
-          
+      </div>  
       </div>
   </section>
+  
+  <!-- Our Benefits -->
+  <section id="our-team" class="container-fluid" style="background:#f15d24;"> 
+  
+      <div class="row">
+              <h1 style="color:white;">Our Benefits</h1>
+              <img src="images/whiteStripes.png" /> 
+              <div class="clearfix"/>
+          <br/> 
+          <p class="col-sm-10 col-sm-push-1" style="color:white;">At Evans &amp; Chambers, we are committed to fostering a culture that is as rewarding as it is enjoyable.  Our benefits focus on you and your family's health and well-being and plan for your future.  Our goal is to remove the distraction and stress of everyday life, to allow focus on success and career development.  Our best-in-class work force deserves the same caliber of benefits.</p>
+      </div>
+     <style>
+	 
+	 /* Inline style sheet for the grid of buttons */
+	
+	 .square {
+    margin-top: 100%;
+	 }
+
+.grid{
+	margin-bottom:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	margin-left:0px;
+	margin-right:0px;
+	width:250px;
+	height:250px;
+}
+
+.thumbnail {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 30px);
+	margin-top:0px;
+	margin-bottom:0px;
+	border-radius:0px;
+	text-align:left;
+	color:white;
+	padding-left:10px;
+	border: 0px !important;
+	outline: 0 !important;
+}
+
+.row{
+	padding-bottom:5px;
+}
+
+.flip-container {
+	perspective: 1000;
+	padding-left:0px;
+	padding-right:0px;
+}
+	/* flip the pane when clicked */
+	.flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+
+.flipper, .flip-container{
+	width:250px;
+	height:250px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* quick fix for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+/* Still need to incorporate IE support -- this will be a quick fix and can be done after the grid sizing is fixed */
+
+/* Jamil,
+
+This is the issue that I am having:
+
+	In getting the buttons to rotate properly, everything that is .flipper, .flip-container, and .grid need to be the same exact size that way they line up and rotate properly.  At the moment, I have it hardcoded to 250px x 250 px.  I cannot figure out how to force these three elements to be the same size and scalable with the bootstrap CSS.  Any insight or help with this would be great. 
+	
+	Additionally, the grid of buttons is not centered on the page, that would also be helpful.
+
+Thanks,
+
+Aaron
+
+*/
+	 </style>
+     
+	<div class="container" style="margin-top:25px;">
+	<div class="row">
     
+    <!-- This outermost div is the large container for the entire button -->
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card1">
+    <!-- The "flipper" div contains the front and back, which are rotated on click using the JS file testScript.js-->
+    <div class="flipper">
+    	<div class="front">
+        	<!-- front content -->
+            <button class="grid" onClick="flipButton1()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#e53800;">Medical, Dental and Vision Insurance</p>
+            </button>
+        </div>
+        <div class="back">
+        	<!-- back content -->
+            <button class="grid" onClick="flipButton1()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#e53800;">Medical Benefits backside</p>
+            </button>
+        </div>
+    </div>
+    </div>
+  
+  <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card2">
+	<div class="flipper">
+		<div class="front">
+			<!-- front content -->
+             <button class="grid" onClick="flipButton2()">
+        		<div class="square"></div>
+        		<p class="thumbnail" style="background-color:#ff5c29;">Tuition &amp; Training Reimbursment</p>
+      	     </button>
+		</div>
+		<div class="back">
+			<!-- back content -->
+             <button class="grid" onClick="flipButton2()">
+        		<div class="square"></div>
+        		<p class="thumbnail" style="background-color:#ff5c29;">Tuition &amp; Training Backside</p>
+      		 </button>
+	   </div>
+	</div>
+	</div>
+    
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card3">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton3()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#ff794c;">Bonus Plans</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton3()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#ff794c;">Bonus Plans Backside</p>
+            </button>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card4">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton4()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#b72d00;">Paid Overtime</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton4()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#b72d00;">Paid Overtime Backside</p>
+            </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+  <div class="row">
+  
+  <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card5">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton5()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#b72d00;">Annual Leave (pd tme off &amp; holidays)</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton5()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#b72d00;">Annual Leave Backside</p>
+            </button>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card6">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton6()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#fe4b11;">401(k) plan with Company contribution</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton6()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#fe4b11;">401(k) backside</p>
+            </button>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card7">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton7()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#e53800;">Flexible Spending Accounts</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton7()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#e53800;">Spending Accounts Backside</p>
+            </button>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card8">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton8()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#fe4b11;">Life Insurance, short- and long-term disability</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton8()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#fe4b11;">Life Insurance / Disability backside</p>
+            </button>
+            </div>
+        </div>
+    </div> 
+  </div>  
+  
+  <div class="row">
+  
+  <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card9">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton9()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#ff5c29;">Payroll deduction contribution to 529 College Savings Plan</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton9()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#ff5c29;">College Savings Plans Backside</p>
+            </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card10">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton10()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#b72d00;">Paid Parental Leave</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton10()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#b72d00;">Paid Parental Leave Background</p>
+            </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card11">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton11()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#ff794c;">Work/life benefit programs</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton11()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#ff794c;">Work/life Backside</p>
+            </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card12">
+    	<div class="flipper">
+        	<div class="front">
+            	<!-- front content -->
+                 <button class="grid" onClick="flipButton12()">
+                 	<div class="square"></div>
+                    <p class="thumbnail" style="background-color:#e53800;">Company outings and team events</p>
+                 </button>
+            </div>
+            <div class="back">
+            <!-- back content -->
+            <button class="grid" onClick="flipButton12()">
+            	<div class="square"></div>
+                <p class="thumbnail" style="background-color:#e53800;">Company and Team events Backside</p>
+            </button>
+            </div>
+        </div>
+    </div>    
+  
+  
+  </div>
+  </div>     
+  </section>    
     
   <!-- Footer Section -->
   <?php include 'includes/footer.php'; echoFooter(145); ?>
