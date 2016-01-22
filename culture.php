@@ -47,7 +47,7 @@ This means our people aren’t just the mouthpiece of EC; they’re also our han
           
       <div class="row">
           <div class="col-md-6">
-            <h1>Ask:does it serve the client?</h1>
+            <h1>Ask: does it serve the client?</h1>
             <p>Customer service is one of those things people like to talk about... because it matters. At EC, we think cool ideas are great, but if it’s going to fly, it has to benefit the client.</p>
           </div>
           <div class="col-md-6">
