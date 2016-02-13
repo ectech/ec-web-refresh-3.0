@@ -84,87 +84,46 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
   </section>
   
   <!-- Our Benefits -->
-  <section id="our-team" class="container-fluid" style="background:#f15d24;"> 
+  <section id="our-team" class="container-fluid" style="background:#f15d24; padding-left: 0; padding-right: 0; padding-bottom: 0;"> 
   
-      <div class="row">
+      <div class="row" style="padding: 0;">
               <h1 style="color:white;">Our Benefits</h1>
               <img src="images/whiteStripes.png" /> 
-              <div class="clearfix"/>
+              <div class="clearfix"></div>
           <br/> 
-          <p class="col-sm-10 col-sm-push-1" style="color:white;">At Evans &amp; Chambers, we are committed to fostering a culture that is as rewarding as it is enjoyable.  Our benefits focus on you and your family's health and well-being and plan for your future.  Our goal is to remove the distraction and stress of everyday life, to allow focus on success and career development.  Our best-in-class work force deserves the same caliber of benefits.</p>
+          <p class="col-sm-10 col-sm-push-1" style="color:white;">At Evans &amp; Chambers, we are committed to fostering a culture that is as rewarding as it is enjoyable.  Our benefits focus on your and your family's health and well-being and plan for your future.  Our goal is to remove the distraction and stress of everyday life, to allow focus on success and career development.  Our best-in-class workforce deserves the same caliber of benefits.</p>
       </div>
-     <style>
+<style>
 	 
-	 /* Inline style sheet for the grid of buttons */
-	
-	 .square {
-    margin-top: 100%;
-	 }
-
-.grid{
-	margin-bottom:0px;
-	padding-bottom:0px;
-	padding-left:0px;
-	padding-right:0px;
-	margin-left:0px;
-	margin-right:0px;
-	width:250px;
-	height:250px;
-}
-
-.thumbnail {
-    position: absolute;
-    top: 0px;
-    bottom: 0;
-    left: 0px;
-    right: 0;
-    text-align:center;
-    padding-top:calc(50% - 30px);
-	margin-top:0px;
-	margin-bottom:0px;
-	border-radius:0px;
-	text-align:left;
-	color:white;
-	padding-left:10px;
-	border: 0px !important;
-	outline: 0 !important;
-}
-
+/* Inline style sheet for the grid of buttons */
 .row{
 	padding-bottom:5px;
-}
-
-.flip-container {
-	perspective: 1000;
-	padding-left:0px;
-	padding-right:0px;
-}
-	/* flip the pane when clicked */
-	.flip-container.hover .flipper, .flip-container.flip .flipper {
-	transform: rotateY(180deg);
-}
-
-
-.flipper, .flip-container{
-	width:250px;
-	height:250px;
 }
 
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
-	position: relative;
+	/* position: relative; */
 }
 
 /* hide back of pane during swap */
 .front, .back {
+    perspective: 1000px;
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
+    height: 360px;
+    padding: 30px;
+    margin-bottom:0px;
+    margin-top:0;
+	padding-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+    cursor: pointer;
+    width: 100%;
+    
 }
 
 /* front pane, placed above back */
@@ -172,13 +131,46 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
 	z-index: 2;
 	/* quick fix for firefox 31 */
 	transform: rotateY(0deg);
+    background-image: url('images/icon_benefits_square_plus.gif');
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 40px;
+    
 }
 
+/* flip the pane when clicked */
+.flip-box.flip .flipper {
+    transform: rotateY(180deg);
+}
+div.flip-box {
+    perspective: 1000px;
+    background-color: #455560;
+    height: 360px;
+    font-size: 38px;
+    line-height: 45px;
+    color: white;          
+    perspective: 1000;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+ div.mini-horizontal-bar {
+     width: 100px;
+     border-top: 1px solid white;
+     height: 2px;
+     margin-bottom: 30px;
+     margin-top: 80px;
+ }
+         
 /* Still need to incorporate IE support -- this will be a quick fix and can be done after the grid sizing is fixed */
 
 /* Jamil,
@@ -195,249 +187,146 @@ Aaron
 
 */
 	 </style>
-     
-	<div class="container" style="margin-top:25px;">
-	<div class="row">
-    
-    <!-- This outermost div is the large container for the entire button -->
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card1">
-    <!-- The "flipper" div contains the front and back, which are rotated on click using the JS file testScript.js-->
-    <div class="flipper">
-    	<div class="front">
-        	<!-- front content -->
-            <button class="grid" onClick="flipButton1()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#e53800;">Medical, Dental and Vision Insurance</p>
-            </button>
-        </div>
-        <div class="back">
-        	<!-- back content -->
-            <button class="grid" onClick="flipButton1()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#e53800;">Medical Benefits backside</p>
-            </button>
-        </div>
+      
+     <div class="flip-wrapper" style="margin-top: 80px">
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6 col-xs-6" id="card1">
+            <div class="flipper">
+                <!-- The "flipper" div contains the front and back, which are rotated on click 
+                        using the JS file testScript.js-->
+                <div class="front" onClick="flipButton(this)" style="background-color: #e53800;">
+                    <div class="mini-horizontal-bar"></div>
+                    Medical, Dental and Vision Insurance
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    EC offers a premier healthcare offering through CareFirst Blue Cross/Blue Shield, Healthy Advantage BlueChoice medical insurance. This plan enables you to visit any licensed physician or healthcare facility for treatment, offering in-network providers and out-of-network provider coverage. EC's Dental and Vision insurance plans are provided by CareFirst Blue Cross/Blue Shield. Plans provide coverage for preventative, routine and major work.   
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card2">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #ff5c29">
+                    <div class="mini-horizontal-bar"></div>
+                    Tuition &amp; Training Reimbursment
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.  
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card3">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #ff794d">
+                    <div class="mini-horizontal-bar"></div>
+                    Bonus Plans
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card4">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #b72d00">
+                    <div class="mini-horizontal-bar"></div>
+                    Paid Overtime
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                </div>
+            </div>
+        </div> 
+         
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card5">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #b72d00">
+                    <div class="mini-horizontal-bar"></div>
+                    Annual Leave<br/>
+                    <span style="font-size: 30px">(pd tme off &amp; holidays)</span>
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card6">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #fe4b11">
+                    <div class="mini-horizontal-bar"></div>
+                    401(k) plan with Company contribution
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card7">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #e53800">
+                    <div class="mini-horizontal-bar"></div>
+                    Flexible Spending Accounts
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    EC offers its employees the ability to set aside pre-tax dollars for out-of-pocket dental and vision expenses and dependent care expenses. 
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card8">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #fe4b11">
+                    <div class="mini-horizontal-bar"></div>
+                    Life Insurance, short- and long-term disability
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    EC provides employees with Life and Accidental Death & Dismemberment Insurance (AD&D). Short-term and long-term disability coverage is also provided to employees. EC's disability plan preserves a portion of your income if you are unable to work as a result of illness, injury or pregnancy. These benefits are paid 100% by Evans & Chambers Technology.
+                </div>
+            </div>
+        </div> 
+         
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card9">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #ff5c29">
+                    <div class="mini-horizontal-bar"></div>
+                    Payroll deduction contribution to 529 College Savings Plan
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card10">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #b72d00">
+                    <div class="mini-horizontal-bar"></div>
+                    Paid Parental Leave
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card11">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #ff794c">
+                    <div class="mini-horizontal-bar"></div>
+                    Work/life benefit programs
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                </div>
+            </div>
+        </div> 
+        <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card12">
+            <div class="flipper">
+                <div class="front" onClick="flipButton(this)" style="background-color: #e53800">
+                    <div class="mini-horizontal-bar"></div>
+                    Company outings and team events
+                </div>
+                <div class="back" onClick="flipButton(this)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                </div>
+            </div>
+        </div> 
     </div>
-    </div>
-  
-  <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card2">
-	<div class="flipper">
-		<div class="front">
-			<!-- front content -->
-             <button class="grid" onClick="flipButton2()">
-        		<div class="square"></div>
-        		<p class="thumbnail" style="background-color:#ff5c29;">Tuition &amp; Training Reimbursment</p>
-      	     </button>
-		</div>
-		<div class="back">
-			<!-- back content -->
-             <button class="grid" onClick="flipButton2()">
-        		<div class="square"></div>
-        		<p class="thumbnail" style="background-color:#ff5c29;">Tuition &amp; Training Backside</p>
-      		 </button>
-	   </div>
-	</div>
-	</div>
-    
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card3">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton3()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#ff794c;">Bonus Plans</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton3()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#ff794c;">Bonus Plans Backside</p>
-            </button>
-            </div>
-        </div>
-    </div> 
-    
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card4">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton4()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#b72d00;">Paid Overtime</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton4()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#b72d00;">Paid Overtime Backside</p>
-            </button>
-            </div>
-        </div>
-    </div>
-    </div>
-    
-  <div class="row">
-  
-  <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card5">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton5()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#b72d00;">Annual Leave (pd tme off &amp; holidays)</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton5()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#b72d00;">Annual Leave Backside</p>
-            </button>
-            </div>
-        </div>
-    </div> 
-    
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card6">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton6()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#fe4b11;">401(k) plan with Company contribution</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton6()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#fe4b11;">401(k) backside</p>
-            </button>
-            </div>
-        </div>
-    </div> 
-    
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card7">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton7()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#e53800;">Flexible Spending Accounts</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton7()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#e53800;">Spending Accounts Backside</p>
-            </button>
-            </div>
-        </div>
-    </div> 
-    
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card8">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton8()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#fe4b11;">Life Insurance, short- and long-term disability</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton8()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#fe4b11;">Life Insurance / Disability backside</p>
-            </button>
-            </div>
-        </div>
-    </div> 
-  </div>  
-  
-  <div class="row">
-  
-  <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card9">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton9()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#ff5c29;">Payroll deduction contribution to 529 College Savings Plan</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton9()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#ff5c29;">College Savings Plans Backside</p>
-            </button>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card10">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton10()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#b72d00;">Paid Parental Leave</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton10()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#b72d00;">Paid Parental Leave Background</p>
-            </button>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card11">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton11()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#ff794c;">Work/life benefit programs</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton11()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#ff794c;">Work/life Backside</p>
-            </button>
-            </div>
-        </div>
-    </div>
-    
-    <div class="flip-container col-md-3 col-sm-4 col-xs-6" id="card12">
-    	<div class="flipper">
-        	<div class="front">
-            	<!-- front content -->
-                 <button class="grid" onClick="flipButton12()">
-                 	<div class="square"></div>
-                    <p class="thumbnail" style="background-color:#e53800;">Company outings and team events</p>
-                 </button>
-            </div>
-            <div class="back">
-            <!-- back content -->
-            <button class="grid" onClick="flipButton12()">
-            	<div class="square"></div>
-                <p class="thumbnail" style="background-color:#e53800;">Company and Team events Backside</p>
-            </button>
-            </div>
-        </div>
-    </div>    
-  
-  
-  </div>
-  </div>     
   </section>    
     
   <!-- Footer Section -->
