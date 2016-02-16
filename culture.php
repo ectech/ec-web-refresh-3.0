@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="testScript.js"></script>
+<script src="js/benefitsScript.js"></script>
   <title>Team Culture | EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
   <?php include 'includes/head.php'; ?>
 
@@ -141,7 +141,7 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
 	transform: rotateY(180deg);
     background-color: white;
     color: black;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 25px;
     padding: 40px;
     
@@ -172,20 +172,6 @@ div.flip-box {
  }
          
 /* Still need to incorporate IE support -- this will be a quick fix and can be done after the grid sizing is fixed */
-
-/* Jamil,
-
-This is the issue that I am having:
-
-	In getting the buttons to rotate properly, everything that is .flipper, .flip-container, and .grid need to be the same exact size that way they line up and rotate properly.  At the moment, I have it hardcoded to 250px x 250 px.  I cannot figure out how to force these three elements to be the same size and scalable with the bootstrap CSS.  Any insight or help with this would be great. 
-	
-	Additionally, the grid of buttons is not centered on the page, that would also be helpful.
-
-Thanks,
-
-Aaron
-
-*/
 	 </style>
       
      <div class="flip-wrapper" style="margin-top: 80px">
@@ -197,9 +183,7 @@ Aaron
                     <div class="mini-horizontal-bar"></div>
                     Medical, Dental and Vision Insurance
                 </div>
-                <div class="back" onClick="flipButton(this)">
-                    EC offers a premier healthcare offering through CareFirst Blue Cross/Blue Shield, Healthy Advantage BlueChoice medical insurance. This plan enables you to visit any licensed physician or healthcare facility for treatment, offering in-network providers and out-of-network provider coverage. EC's Dental and Vision insurance plans are provided by CareFirst Blue Cross/Blue Shield. Plans provide coverage for preventative, routine and major work.   
-                </div>
+                <div class="back" onClick="flipButton(this)">EC offers a premier healthcare offering through CareFirst Blue Cross/Blue Shield, Healthy Advantage BlueChoice medical insurance. This plan enables you to visit any licensed physician or healthcare facility for treatment, offering in-network providers and out-of-network provider coverage. EC's Dental and Vision insurance plans are provided by CareFirst Blue Cross/Blue Shield. Plans provide coverage for preventative, routine and major work.</div>
             </div>
         </div> 
         <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card2">
@@ -208,9 +192,7 @@ Aaron
                     <div class="mini-horizontal-bar"></div>
                     Tuition &amp; Training Reimbursment
                 </div>
-                <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.  
-                </div>
+                <div class="back" onClick="flipButton(this)">EC promotes participation in professional courses, conferences, seminars, and/or online training programs through our academic reimbursement program. If you’re seeking an advanced degree in a relevant field, EC offers tuition assistance to eligible employees who complete job related courses. Each employee is allowed a period of paid time off for training purposes based on the scheduled training.</div>
             </div>
         </div> 
         <div class="flip-box col-lg-3 col-md-4 col-sm-6" id="card3">
@@ -220,7 +202,7 @@ Aaron
                     Bonus Plans
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                    EC offers bonus plans to any employee who is recognized by their customer as going beyond the normal duties to provide solutions resulting in immediate results for the customer, to an employee on a quarterly basis for their contributions to project and company profitability, or to an employee for recommendation of a successfully hired candidate.
                 </div>
             </div>
         </div> 
@@ -231,7 +213,7 @@ Aaron
                     Paid Overtime
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                    As projects guidelines allow, employees can be approved for overtime pay to meet project demands.
                 </div>
             </div>
         </div> 
@@ -244,7 +226,7 @@ Aaron
                     <span style="font-size: 30px">(pd tme off &amp; holidays)</span>
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                    EC employees accrue Paid Time Off (PTO) annually to be used for personal, vacation or sick time off. Accrual of PTO hours begins at the time of hire and continues even while an employee uses PTO hours. The amount of PTO accrued annually continually increases based on length of service at Evans &amp; Chambers. EC also provides twelve (12) paid holidays per year: six fixed holidays and six floating holidays.
                 </div>
             </div>
         </div> 
@@ -255,7 +237,7 @@ Aaron
                     401(k) plan with Company contribution
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                    EC provides benefits for tomorrow by offering investment programs designed to help you build a secure financial future. Investment options in the Evans &amp; Chambers Section 401(k) Plan provide a diversified range of investment choices for Plan participants across 12 different asset classes. Lastly, EC will provide you with top-notch educational tools and financial advice on various retirement topics.
                 </div>
             </div>
         </div> 
@@ -277,7 +259,7 @@ Aaron
                     Life Insurance, short- and long-term disability
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    EC provides employees with Life and Accidental Death & Dismemberment Insurance (AD&D). Short-term and long-term disability coverage is also provided to employees. EC's disability plan preserves a portion of your income if you are unable to work as a result of illness, injury or pregnancy. These benefits are paid 100% by Evans & Chambers Technology.
+                    EC provides employees with Life and Accidental Death &amp; Dismemberment Insurance (AD&amp;D). Short-term and long-term disability coverage is also provided to employees. EC's disability plan preserves a portion of your income if you are unable to work as a result of illness, injury or pregnancy. These benefits are paid 100% by Evans &amp; Chambers Technology.
                 </div>
             </div>
         </div> 
@@ -289,7 +271,7 @@ Aaron
                     Payroll deduction contribution to 529 College Savings Plan
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                    Evans & Chambers Technology helps employees save money toward the rising costs of a college education for their families by offering a payroll deducted contribution to one of the Country's highest rated and largest college savings plans, American Funds. This benefit provides an easy, payroll deducted contribution to your 529 College Savings Plan. This is also an opportunity to save additional funds for college education because there are no fees associated with the portfolio.
                 </div>
             </div>
         </div> 
@@ -300,7 +282,7 @@ Aaron
                     Paid Parental Leave
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                    Maternity/paternity/adoption leave under this policy is a paid leave associated with the birth of an employee’s own child or the placement of a child with the employee in connection with adoption.
                 </div>
             </div>
         </div> 
@@ -311,7 +293,7 @@ Aaron
                     Work/life benefit programs
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                    EC recognizes the need for balance between work demands and personal demands. The following programs help support our employees through various life stages. Evans &amp; Chambers offers a resource for set up and contribution to a 529 College Savings Plan through payroll deduction and Financial Planning services.
                 </div>
             </div>
         </div> 
@@ -322,7 +304,7 @@ Aaron
                     Company outings and team events
                 </div>
                 <div class="back" onClick="flipButton(this)">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat nunc eu quam mattis, id pulvinar magna scelerisque. Phasellus rhoncus lectus et neque pulvinar dapibus.
+                    Building relationships outside of the workplace helps us to perform better in the workplace. Evans & Chambers schedules a full itinerary of events throughout the year to give employees the opportunity to simply have fun and let their hair down. Events in the past have included: a team ropes course, pro sporting events, happy hours, masterchef-type competitions and quarterly dinners.
                 </div>
             </div>
         </div> 
