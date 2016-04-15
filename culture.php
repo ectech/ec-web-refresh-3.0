@@ -102,8 +102,16 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
 
 /* flip speed goes here */
 .flipper {
+	backface-visiblity: hidden;
+	
 	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	-ms-transition: 0.6s;
+	
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	
 	/* position: relative; */
 }
 
@@ -148,9 +156,22 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
 }
 
 /* flip the pane when clicked */
-.flip-box.flip .flipper {
+.flip-box.flipFront .flipper {
+	backface-visiblity: hidden;
+	
+	-webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
+
+.flip-box.flipBack .flipper {
+	backface-visiblity: hidden;
+	
+	-webkit-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
 div.flip-box {
     perspective: 1000px;
     background-color: #455560;
