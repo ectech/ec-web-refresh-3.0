@@ -102,8 +102,6 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
 
 /* flip speed goes here */
 .flipper {
-	backface-visiblity: hidden;
-	
 	transition: 0.6s;
 	-webkit-transition: 0.6s;
 	-ms-transition: 0.6s;
@@ -111,14 +109,10 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
-	
-	/* position: relative; */
 }
 
 /* hide back of pane during swap */
 .front, .back {
-    perspective: 1000px;
-	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -132,12 +126,38 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
     cursor: pointer;
     width: 100%;
     
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -o-transform: rotateY(0deg);
+
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: rotateY(0deg);
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+
+    
 }
 
 /* front pane, placed above back */
 .front {
 	z-index: 2;
-	/* quick fix for firefox 31 */
+	/* quick fix for firefox 31 - fixes flicker */
 	transform: rotateY(0deg);
     background-image: url('images/icon_benefits_square_plus.gif');
     background-repeat: no-repeat;
@@ -157,29 +177,36 @@ You’re not just a cog in the wheel here; at EC, you have access to executive m
 
 /* flip the pane when clicked */
 .flip-box.flipFront .flipper {
-	backface-visiblity: hidden;
-	
-	-webkit-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .flip-box.flipBack .flipper {
-	backface-visiblity: hidden;
-	
-	-webkit-transform: rotateY(-180deg);
-	-ms-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);  
 }
 
 div.flip-box {
-    perspective: 1000px;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d;
+    
     background-color: #455560;
     height: 360px;
     font-size: 38px;
     line-height: 45px;
     color: white;          
-    perspective: 1000;
     padding-left: 0;
     padding-right: 0;
 
@@ -199,7 +226,7 @@ div.flip-box {
         <div class="flip-box col-lg-3 col-md-4 col-sm-6 col-xs-6" id="card1">
             <div class="flipper">
                 <!-- The "flipper" div contains the front and back, which are rotated on click 
-                        using the JS file testScript.js-->
+                        using the JS file benefitsScript.js-->
                 <div class="front" onClick="flipButton(this)" style="background-color: #e53800;">
                     <div class="mini-horizontal-bar"></div>
                     Medical, Dental and Vision Insurance

@@ -26,48 +26,66 @@
   <section id="services" class="container-fluid">
       <div class="row">
           <div class="col-md-6 one">
+              <img src="images/icon_offerings_businessproc.png"/><br/>
+              <h1>Project Management Office (PMO) Support</h1>
+              <p>Defining governance, operational processes, and IT requirements to drive efficient and cost effective technical solutions.</p>
+          </div>
+          <div class="col-md-6 two">
+              <img src="images/icon_offerings_apiwebservice.png"/><br/>
+              <h1>Legacy System Modernization</h1>
+              <p>Replace costly legacy systems with efficient solutions that better align with how your business operates today.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 three">
               <img src="images/icon_offerings_apiwebservice.png"/><br/>
               <h1>API/Web Service Development</h1>
               <p>Access new revenue streams by monetizing your applications, letting other developers build securely on tools you've created.</p>
           </div>
-          <div class="col-md-6 two">
+          <div class="col-md-6 four">
               <img src="images/icon_offerings_mobile.png"/><br/>
               <h1>Mobile App Development</h1>
               <p>Bring your solution to today's fastest-growing, most popular platform, and start reaching more customers.</p>
           </div>
-          
       </div>
       <div class="row">
-          <div class="col-md-6 three">
+          <!--
+          <div class="col-md-6 five">
               <img src="images/icon_offerings_businessproc.png"/><br/>
               <h1>Business Process Analysis &amp; Modeling</h1>
               <p>Strategically evaluate your existing business processes, and innovate new models to streamline your operations.</p>
           </div>
-          <div class="col-md-6 four">
+            -->
+          <div class="col-md-6 five">
+              <img src="images/icon_offerings_businessproc.png"/><br/>
+              <h1>Intelligence Analysis</h1>
+              <p>Analyze and exploit your vital intelligence data collections to create timely products for use across the operational, strategic and tactical levels.  </p>
+          </div>
+          <div class="col-md-6 six">
               <img src="images/icon_offerings_cloud.png"/><br/>
               <h1>Cloud Computing</h1>
               <p>Eliminate data center overhead, reduce your need for admin and realize new efficiencies in development and maintenance.</p>
           </div>
       </div>
       <div class="row">
-          <div class="col-md-6 five">
+          <div class="col-md-6 seven">
               <img src="images/icon_offerings_insider.png"/><br/>
               <h1>Insider Threat</h1>
               <p>Establish a comprehensive vantage point to understand your users, mitigate risks and protect your data and systems.</p>
           </div>
-          <div class="col-md-6 six">
+          <div class="col-md-6 eight">
               <img src="images/icon_offerings_immigration.png"/><br/>
               <h1>Immigration</h1>
               <p>Modernize the immigration process by implementing breakthrough solutions for better throughput and accuracy.</p>
           </div>
       </div>
       <div class="row">
-          <div class="col-md-6 seven">
+          <div class="col-md-6 nine">
               <img src="images/icon_offerings_persec.png"/><br/>
               <h1>Personnel Security</h1>
               <p>Improve throughput, refining the accuracy of your clearances while dramatically reducing processing time.</p>
           </div>
-          <div class="col-md-6 eight">
+          <div class="col-md-6 ten">
               <img src="images/icon_offerings_ct.png"/><br/>
               <h1>Counter-terrorism</h1>
               <p>Deploy solutions that make it easier for analysts to understand threats and keep our nation safe.</p>

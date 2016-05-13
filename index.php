@@ -39,23 +39,25 @@
               <h1>Our Offerings</h1>
               <img src="images/icon_star_small_white.png"/><br/>
               <ul>
+                  <li>Project Management Office (PMO) Support</li>
                   <li>Web Development</li>
                   <li>APIs/Web Services</li>
                   <li>Mobile App Development</li>
                   <li>Cloud Computing</li>
-                  <li>Business Process Analysis</li>
+                  <li>Intelligence Analysis</li>
                   <li class="last"><a href="offerings.php" class="button-underline">Learn More</a></li>
               </ul>
           </div>
           <div class="col-sm-6">
               <h1>Our Expertise</h1>
               <img src="images/icon_star_small_white.png"/><br/>
-              <ul>
+              <ul>        
                   <li>Insider Threat</li>
                   <li>Counterterrorism</li>
                   <li>Personnel Security</li>
                   <li>Immigration</li>
                   <li>Information Sharing</li>
+                  <li>Legacy System Modernization</li>
                   <li class="last"><a href="offerings.php" class="button-underline">Learn More</a></li>
               </ul>            
           </div>

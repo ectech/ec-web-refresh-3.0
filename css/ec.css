@@ -1001,7 +1001,7 @@ section#services div.one, section#services div.two { /* no border on the top row
     padding: 80px 60px 40px 60px;
 }
 
-section#services div.one, section#services div.three, section#services div.five, section#services div.seven {
+section#services div.one, section#services div.three, section#services div.five, section#services div.seven, section#services div.nine {
     border-right: 1px solid gray;
 }
 
