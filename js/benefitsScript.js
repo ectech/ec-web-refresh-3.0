@@ -8,6 +8,6 @@ function flipButton(el){
 	$(".flip-box:not('div#" + id + "')").removeClass("flipBack");
 	
 	//flips the front and back simulatenously again (aimed at Safari)
-	document.querySelector("#" + id).classList.toggle("flipFtont");
+	document.querySelector("#" + id).classList.toggle("flipFront");
 	document.querySelector("#" + id).classList.toggle("flipBack");	
 }
