@@ -178,6 +178,55 @@ if(function_exists("get_posts")) {
 
   </section>
 
+   <section id="logos" class="container-fluid">
+      <div class="row">
+          <div class="col-sm-12">
+              <h1>NEW SECTION TITLE</h1>
+              <img src="images/icon_star_small_orange.png" />
+          </div>
+      </div>
+
+      <style>
+        .row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+     </style>
+
+      <div class="container">
+          <div class="row row-centered">
+          <div class="col-sm-6 col-md-3 col-centered">
+             <img src="images/iso_9001_logo.png" class="logo"/>
+          </div>
+          <div class="col-sm-6 col-md-3 col-centered">
+             <img src="images/hubzone_logo.png" class="logo"/>
+          </div>
+          <div class="col-sm-6 col-md-3 col-centered">
+             <img src="images/aws_logo.png" class="logo"/>
+          </div>
+          <div class="col-sm-6 col-md-3 col-centered">
+             <img src="images/sba_logo.png" class="logo"/>
+          </div>
+      </div>
+
+
+
+          <p>We can put some text here if we want.</p>
+
+
+          <div class="row">
+          <a href="#" class="text-center button-box orange">Sample Button Box</a>
+      </div>
+
+  </section>
+
   <!-- Footer Section -->
   <?php include 'includes/footer.php'; echoFooter(45); ?>
 </body>
