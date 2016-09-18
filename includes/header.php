@@ -80,6 +80,7 @@
                 <main id="panel">
                     ';
 
+
         echo '
             <!-- Affix Banner - hidden until scrolled down -->
             <header id="nav">
@@ -92,6 +93,7 @@
               </div>
               <div class="row">
                 <blockquote id="' . $blockquote_id . '"><span id="js-rotating">' . $tagline . '</span></blockquote>';
+
                 echo '
                   <div class="container" id="logo-tray">
                     <div class="row row-centered">
@@ -99,10 +101,10 @@
                       <table>
                         <tr>
                           <td class="col-centered padded-td">
-                            <img style="width: 50px; height: 50px;" class="logo-tray-icon-style" src="images/iso_9001_logo.png" class="logo"/>
+                            <img style="width: 100px; height: 100px;" class="logo-tray-icon-style" src="images/iso-logo-white.png" class="logo"/>
                           </td>
                           <td class="col-centered padded-td">
-                            <img style="width: 50px; height: 50px;" class="logo-tray-icon-style" src="images/hubzone_logo.png" class="logo"/>
+                            <img style="width: 100px; height: 100px;" class="logo-tray-icon-style" src="images/hubzone-logo-white.png" class="logo"/>
                           </td>
                           <td class="col-centered padded-td">
                             ';
@@ -111,23 +113,23 @@
         if(strpos($url, 'blog') !== false) {
           echo '  <img src="images/icon_star_big_gray2x.png" class="star blog" width="27">';
         } else {
-          echo '  <img src="images/icon_star_big_white.png" class="star">';
+                            echo '  <img src="images/icon_star_big_white.png" class="star">';
                     }
 
                             echo '
                             </td>
                           <td class="col-centered padded-td">
-                            <img style="width: 50px; height: 50px;" class="logo-tray-icon-style" src="images/aws_logo.png" class="logo"/>
+                            <img style="width: 100px; height: 100px;" class="logo-tray-icon-style" src="images/aws-logo-white.png" class="logo"/>
                           </td>
                           <td class="col-centered padded-td">
-                            <img style="width: 50px; height: 50px;" class="logo-tray-icon-style" src="images/sba_logo.png" class="logo"/>
+                            <img style="width: 100px; height: 100px;" class="logo-tray-icon-style" src="images/sba-logo-white.png" class="logo"/>
                           </td>
                         </tr>
                       </table>
                       </center>
 
                     </div>
-          ';
+                    ';
 
 
           echo '
