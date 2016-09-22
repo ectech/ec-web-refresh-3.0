@@ -192,8 +192,8 @@ if(function_exists("get_posts")) {
         }
 
         .padded-td {
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
         }
 
 

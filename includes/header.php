@@ -94,6 +94,7 @@
               <div class="row">
                 <blockquote id="' . $blockquote_id . '"><span id="js-rotating">' . $tagline . '</span></blockquote>';
 
+                if(strrpos($url, '/') == strlen($url)-1 || strpos($url, 'index.php') !== false){
                 echo '
                   <div class="container" id="logo-tray">
                     <div class="row row-centered">
@@ -108,6 +109,7 @@
                           </td>
                           <td class="col-centered padded-td">
                             ';
+                            }
 
 
         if(strpos($url, 'blog') !== false) {
@@ -115,7 +117,7 @@
         } else {
                             echo '  <img src="images/icon_star_big_white.png" class="star">';
                     }
-
+                        if(strrpos($url, '/') == strlen($url)-1 || strpos($url, 'index.php') !== false){
                             echo '
                             </td>
                           <td class="col-centered padded-td">
@@ -130,6 +132,7 @@
 
                     </div>
                     ';
+                    }
 
 
           echo '
