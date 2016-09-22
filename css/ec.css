@@ -37,7 +37,7 @@
 }
 
 a, a:link, a:visited {
-    color: white;   
+    color: white;
 }
 
 a:hover {
@@ -45,7 +45,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 55px; 
+    font-size: 55px;
     font-weight: 200;
     color: white;
     margin: 15px 0 20px;
@@ -58,7 +58,7 @@ h1.dark {
 }
 
 h2 {
-    font-size: 35px; 
+    font-size: 35px;
     font-weight: 700;
     margin: 0 0 15px;
     text-decoration: none;
@@ -66,7 +66,7 @@ h2 {
 }
 
 h2 a:hover, h2 a:link, h2 a:visited {
-    color: ##46555f; 
+    color: ##46555f;
     text-decoration: none;
 }
 
@@ -82,11 +82,11 @@ h3 {
 }
 
 h4 {
-    font-size:35px; 
-    font-weight: 200;   
+    font-size:35px;
+    font-weight: 200;
 }
 a.button-underline {
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: 700;
     color: white;
     border-bottom: 3px solid white;
@@ -144,22 +144,22 @@ input.orange:hover {
 
 
 p {
-    font-size: 28px; 
+    font-size: 28px;
     line-height: 44px;
     margin-top: 20px;
 }
 
 p.small {
-    font-size: 22px; 
+    font-size: 22px;
     line-height: 32px;
     xpadding-right: 40px;
 }
 
 section {
     font-family: 'Ek Mukta', sans-serif;
-    font-weight: 200; 
+    font-weight: 200;
     -webkit-font-smoothing: antialiased;
-    padding: 80px 0;  
+    padding: 80px 0;
     width: 100%;
 }
 
@@ -176,8 +176,8 @@ body#blog section {
 
 blockquote {
     /* border: 1px solid #fff; */
-    border: none;   
-    color:#fff; 
+    border: none;
+    color:#fff;
     padding: 55px 100px 65px;
     margin: 180px 0 150px;
     font-size: 70px;
@@ -185,7 +185,7 @@ blockquote {
     line-height: 80px;
     /* clip-path: inset(10px 20px 30px 40px); */
     -webkit-font-smoothing: antialiased;
-    
+
 }
 
 .star {
@@ -241,8 +241,8 @@ blockquote {
 
 blockquote#blockquote-blog {
     /* border: 1px solid #fff; */
-    border: none;   
-    color:#46555f; 
+    border: none;
+    color:#46555f;
     padding: 55px 100px 65px;
     margin: 180px 0 45px;
     font-size: 70px;
@@ -269,7 +269,7 @@ blockquote#blockquote-blog {
 }
 
 body#home #content {
-    
+
     top: 810px;
 }
 
@@ -322,7 +322,7 @@ div#header {
 }
 
 .header-showing {
-    background-color: #455560; 
+    background-color: #455560;
 }
 
 section#top {
@@ -331,9 +331,9 @@ section#top {
     text-align:center;
     background: black url(../images/home-masthead-gray-image2.jpg) no-repeat top center fixed;
     background-size: cover;
-    /* 
+    /*
     Commented out because it was disabling the links -- not sure it's needed.
-    z-index: -100; 
+    z-index: -100;
     */
 }
 
@@ -371,7 +371,7 @@ body#blog section#top {
 }
 
 body#blog section#one a {
-    color: #f15c22; 
+    color: #f15c22;
 }
 
 body#blog section#blog-nav {
@@ -379,17 +379,17 @@ body#blog section#blog-nav {
 }
 
 div.blog-nav-next a {
-    background: #f7f7f7 url(../images/icon_blog_next2x.png) no-repeat center center; 
+    background: #f7f7f7 url(../images/icon_blog_next2x.png) no-repeat center center;
     background-size: 48px 15px;
-    padding:15px 20px; 
+    padding:15px 20px;
     width:100px;
     float:right;
 }
 
 div.blog-nav-prev a {
-    background: #f7f7f7 url(../images/icon_blog_prev2x.png) no-repeat center center; 
+    background: #f7f7f7 url(../images/icon_blog_prev2x.png) no-repeat center center;
     background-size: 48px 15px;
-    padding:15px 20px; 
+    padding:15px 20px;
     width:100px;
     float:left;
 }
@@ -406,13 +406,13 @@ a.eclogo img {
 
 section#job-post {
     color: #46555f;
-    
+
 }
 
 section#job-post li a {
     color: #46555f;
     text-decoration: underline;
-    
+
 }
 
 section#job-post h1 {
@@ -452,16 +452,16 @@ section#job-post li {
 
 section#job-post div.job-info-box h3 {
     margin-bottom: 30px;
-    
+
 }
 
 section#job-post div.job-info-box p {
     margin: 5px 0 25px;
-    
+
 }
 
 section#job-post div.job-post-details p {
-    font-size: 20px; 
+    font-size: 20px;
     line-height: 30px;
     margin-bottom: 25px;
 }
@@ -475,11 +475,11 @@ section#job-post div.job-post-details p {
 
 @media only screen and (max-width: 975px) {
     a.eclogo img {
-        width:70px;  
+        width:70px;
     }
-    
+
     header a.eclogo img {
-        width:70px;  
+        width:70px;
     }
 }
 
@@ -490,13 +490,13 @@ section#job-post div.job-post-details p {
     blockquote {
         font-size: 55px;
         line-height: 65px;
-    } 
+    }
 }
 
 
 
 section#top .row img {
-    float:left;   
+    float:left;
 }
 
 section#top ul.navbar {
@@ -506,7 +506,7 @@ section#top ul.navbar {
 ul.navbar {
     float:right;
     color: #fff;
-    padding:0;  
+    padding:0;
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
@@ -532,7 +532,7 @@ ul.navlinks li {
 }
 
 ul.navbar li.selected a {
-    border-bottom: 3px solid white; 
+    border-bottom: 3px solid white;
 }
 
 ul.navbar li a:hover {
@@ -569,53 +569,57 @@ ul.navbar a.cta.selected {
 }
 
 ul li.hamburger {
-    float:right;   
+    float:right;
     color: white;
     border: 3px solid white;
     padding: 8px 12px;
     display: none;
 }
 
+#home_star {
+    top: -200px !important;
+}
+
 section#top div.row img.star {
     position:relative;
-    top:-165px; 
-    clear:both; 
-    margin:0; 
-    float:none;  
+    top:-165px;
+    clear:both;
+    margin:0;
+    float:none;
 }
 
 section#top div.row img.star.blog {
     position:relative;
-    top: -60px; 
-    clear:both; 
-    margin:0; 
-    float:none;  
+    top: -60px;
+    clear:both;
+    margin:0;
+    float:none;
 }
 
 @media only screen and (max-width: 720px) {
     ul.navlinks {
         display:none;
-    }   
+    }
     ul li.hamburger {
-        display:block;   
+        display:block;
     }
 
     a.eclogo img {
-        width:295px;  
+        width:295px;
     }
-    
+
     header a.eclogo img {
-        width:295px;  
+        width:295px;
     }
 }
 
 @media only screen and (max-width: 450px) {
     a.eclogo img {
-        width:70px;  
+        width:70px;
     }
-    
+
     header a.eclogo img {
-        width:70px;  
+        width:70px;
     }
 }
 
@@ -623,18 +627,18 @@ section#top div.row img.star.blog {
 
 section#promise {
     top: 800px;
-    background-color: #f15c22; 
+    background-color: #f15c22;
     color: #fff;
     font-size: 20px;
 }
 
 
 section#promise img {
-    margin: 0 0 25px;   
+    margin: 0 0 25px;
 }
 
 section#promise a.button-box {
-    max-width: 220px;  
+    max-width: 220px;
     width: 100%;
 }
 
@@ -672,7 +676,7 @@ section#our-clients h1 {
 }
 
 section#our-clients div img.logo {
-    height: 150px;   
+    height: 150px;
     margin: 35px 0;
 }
 
@@ -691,7 +695,7 @@ section#our-clients a.button-box {
 /******** HUNGRY SECTION **********/
 
 section#hungry  {
-    background: #f15c22 url(../images/photo-home-atwhiteboard3.jpg) repeat-y top right; 
+    background: #f15c22 url(../images/photo-home-atwhiteboard3.jpg) repeat-y top right;
     color: #fff;
     padding: 0;
 }
@@ -703,17 +707,17 @@ section#hungry a.button-box {
 }
 
 section#hungry div.row {
-    /* margin:0; padding: 0;  */ 
+    /* margin:0; padding: 0;  */
 }
 
 section#hungry p {
-    font-size: 22px; 
+    font-size: 22px;
     line-height: 32px;
-    padding-right: 40px; 
+    padding-right: 40px;
 }
 
 section#hungry div.no-image {
-    /* width: 45%;  */ 
+    /* width: 45%;  */
     background-color: #f15c22;
     height: 100%;
 }
@@ -728,7 +732,7 @@ section#hungry h1 {
 
 section#quote blockquote {
     border: none;
-    color:#455560; 
+    color:#455560;
     padding: 65px 50px;
     margin:0 0 30px 0;
     font-size: 35px;
@@ -739,17 +743,17 @@ section#quote blockquote {
 }
 
 .quote-cap {
-    position: relative; 
-    top: 43px; 
-    width: 90px; 
-    height: 90px; 
-    margin:0 auto; 
-    background-color: #e3e8eb; 
-    color: #f15c22; 
+    position: relative;
+    top: 43px;
+    width: 90px;
+    height: 90px;
+    margin:0 auto;
+    background-color: #e3e8eb;
+    color: #f15c22;
     font-family: 'Ek Mukta', sans-serif;
-    font-weight: 200; 
-    font-size: 142px; 
-    border-radius: 50%; 
+    font-weight: 200;
+    font-size: 142px;
+    border-radius: 50%;
     line-height: 190px;
     z-index: 10000;
 }
@@ -762,7 +766,7 @@ section#get-to-know  {
     padding: 0;
 }
 
-section#get-to-know div.no-image {  
+section#get-to-know div.no-image {
     background-color: #46555f;
 }
 
@@ -775,11 +779,11 @@ section#get-to-know a.button-box {
 }
 
 section#get-to-know a.button-box:hover {
-    color: #46555f;   
+    color: #46555f;
 }
 
 section#get-to-know p {
-    font-size: 22px; 
+    font-size: 22px;
     line-height: 32px;
     padding-left: 60px;
     margin-bottom: 45px;
@@ -794,7 +798,7 @@ section#get-to-know h1 {
 /******** FROM THE BLOG SECTION **********/
 
 section#from-the-blog {
-    background-color: #f7f7f7;    
+    background-color: #f7f7f7;
 }
 
 
@@ -826,7 +830,7 @@ section#logos h1 {
 }
 
 section#logos div img.logo {
-    height: 150px;   
+    height: 150px;
     margin: 35px 0;
 }
 
@@ -846,7 +850,7 @@ section#logos a.button-box {
 /******** FOOTER **********/
 
 section#footer, body#blog section#footer {
-    background-color: white;   
+    background-color: white;
     padding-top: 40px;
     padding-bottom: 50px;
 }
@@ -856,7 +860,7 @@ body#offerings section#footer, body#team-culture section#footer, body#blog secti
 }
 
 section#footer a, section#footer a:link, section#footer a:visited, section#footer a:hover {
-    color: white;   
+    color: white;
     border-bottom: 1px solid white;
     text-decoration:none;
 }
@@ -877,10 +881,10 @@ section#footer a.button-box {
 }
 
 section#footer a.button-sign-up {
-    position: absolute; 
+    position: absolute;
     right: 15px;
     text-align: center;
-    width: auto; 
+    width: auto;
     background-color: #f15c22;
     border-bottom: none;
     color: white;
@@ -979,9 +983,9 @@ section#sub-footer ul {
 
 section#sub-footer ul li {
     float:left;
-    margin: 0 15px 30px 0; 
+    margin: 0 15px 30px 0;
     padding-left: 0;
-    text-align: left;     
+    text-align: left;
 }
 
 section#sub-footer ul li a {
@@ -1006,22 +1010,22 @@ section#sub-footer p, body#blog section#sub-footer p {
 
 /*********** OFFERINGS ************/
 
-section#services {   
+section#services {
     background-color: #46555f;
 }
 
-section#services p { 
+section#services p {
     color: white;
     margin-bottom: 80px;
 }
 
 section#services div div {
-    border-top: 1px solid gray;  
+    border-top: 1px solid gray;
     padding: 80px 60px 40px 60px;
 }
 
 section#services div.one, section#services div.two { /* no border on the top row - this is modified via media queries */
-    border-top: none; 
+    border-top: none;
     padding: 80px 60px 40px 60px;
 }
 
@@ -1059,7 +1063,7 @@ section#our-approach p  {
     font-size: 20px;
     color: #515151;
     font-weight: 200;
-    line-height: 30px;    
+    line-height: 30px;
 }
 
 /*********** OUR TEAM ************/
@@ -1083,7 +1087,7 @@ section#our-team div.col-md-12 {
 }
 
 section#our-team div.col-md-6 h1 {
-    text-align: left; 
+    text-align: left;
     color: #46555f;
     margin-bottom: 30px;
 }
@@ -1104,21 +1108,21 @@ body#aboutus section#photos {
 }
 
 section#browse-contracts {
-    background-color: #f7f7f7;   
+    background-color: #f7f7f7;
 }
 
 section#case-studies {
-    background-color: #f7f7f7; 
+    background-color: #f7f7f7;
     color: #455560;
 }
 
 section#case-studies a {
-    background-color: #fff; 
+    background-color: #fff;
     color: #455560;
 }
 
 section#contact-form {
-    background-color: #f7f7f7; 
+    background-color: #f7f7f7;
     color: #455560;
 }
 
@@ -1169,7 +1173,7 @@ section#browse-contracts a {
 }
 
 a div.block {
-    padding: 30px;  
+    padding: 30px;
     margin: 15px 0;
     background-color:#E3E8EB;
     color: #455560;
@@ -1191,7 +1195,7 @@ section#white-papers div.block {
     text-align: left;
     font-size: 28px;
     font-weight: 700;
-    
+
 }
 
 /******* Contact Form Styles ***********/
@@ -1205,16 +1209,16 @@ body#contact-us input, body#contact-us textarea  {
 }
 
 body#contact-us textarea {
-    height: 250px;   
+    height: 250px;
 }
 
 /********* PARSLEY STYLES **********/
 input.parsley-error, select.parsley-error, textarea.parsley-error {
-    background-color: #F2DEDE;  
+    background-color: #F2DEDE;
 }
 
 ul.parsley-errors-list {
-    list-style: none;   
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -1225,7 +1229,7 @@ ul.parsley-errors-list li {
 }
 
 body#aboutus a.button-box {
-    max-width: 425px; 
+    max-width: 425px;
     width: 100%;
 }
 
@@ -1371,7 +1375,7 @@ section#case-study h1 {
 
 section#case-study div {
     text-align: left;
-    font-size: 28px; 
+    font-size: 28px;
     line-height: 44px;
 }
 
@@ -1386,7 +1390,7 @@ section#job-listings div.row p {
 }
 
 section#job-listings div.arrowblock {
-    padding: 10px;  
+    padding: 10px;
     margin: 15px 0;
     background-color:#E3E8EB;
     color: #455560;
@@ -1395,14 +1399,14 @@ section#job-listings div.arrowblock {
     text-transform: uppercase;
 }
 
-section#job-listings p { 
-    line-height: 28px; 
+section#job-listings p {
+    line-height: 28px;
     font-weight: 200;
     font-size:20px;
     text-align: right;
 }
 
-section#job-listings p.col-sm-3 { 
+section#job-listings p.col-sm-3 {
     text-align: right;
 }
 
@@ -1410,7 +1414,7 @@ section#job-listings p a {
     color: #46555f;
     font-size: 25px;
     font-weight: 700;
-    
+
 }
 
 section#job-listings div.blog-nav-prev, section#job-listings div.blog-nav-next {
@@ -1418,11 +1422,11 @@ section#job-listings div.blog-nav-prev, section#job-listings div.blog-nav-next {
 }
 
 section#job-listings div.col-sm-12 {
-    text-align: center; 
+    text-align: center;
 }
 
 section#what-its-like {
-    background-color: #f7f7f7;   
+    background-color: #f7f7f7;
 }
 
 @media only screen and (max-width: 1108px) {
@@ -1485,12 +1489,12 @@ section#what-its-like {
     }
 
     section#services div.row div.col-md-6 {
-        border: none;  
-        border-bottom: 1px solid gray; 
+        border: none;
+        border-bottom: 1px solid gray;
     }
 
     section#services div.row div.eight {
-        border: none;  
+        border: none;
     }
 
     section#sub-footer div {
@@ -1513,7 +1517,7 @@ section#what-its-like {
         background-position: 0px 0px;
     }
 
-    
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1535,12 +1539,12 @@ section#what-its-like {
 
     section#footer input::-moz-placeholder {  /* Firefox 19+ */
        position: relative;
-       left: -10000px; 
+       left: -10000px;
     }
 
-    section#footer input:-ms-input-placeholder {  
+    section#footer input:-ms-input-placeholder {
        position: relative;
-       left: -10000px; 
+       left: -10000px;
     }
 
     section#footer p.sign-up-label {
@@ -1585,7 +1589,7 @@ section#what-its-like {
     }
 
     section#services div.col-lg-6 {
-        border-top: none;  
+        border-top: none;
         padding: 20px 10px 20px 10px;
     }
 
@@ -1626,7 +1630,7 @@ section#what-its-like {
         height: 60px;
     }
 
-    
+
 }
 
 /* iphone 6 portrait */
@@ -1708,12 +1712,12 @@ body {
 /******** CUSTOM SLIDEOUT STYLES *******/
 
 nav#menu ul {
-    float: left; 
-    text-align: left; 
-    list-style: none; 
-    font-size: 32px; 
-    margin: 40px 0 0 20px; 
-    padding: 0; 
+    float: left;
+    text-align: left;
+    list-style: none;
+    font-size: 32px;
+    margin: 40px 0 0 20px;
+    padding: 0;
     font-weight: 200;
 }
 nav#menu ul li {
@@ -1721,9 +1725,9 @@ nav#menu ul li {
 }
 
 .close-toggle-button {
-    padding: 8px 12px; 
-    border: 3px solid white; 
-    float: right; 
+    padding: 8px 12px;
+    border: 3px solid white;
+    float: right;
     margin: 40px 40px 0 0;
 }
 

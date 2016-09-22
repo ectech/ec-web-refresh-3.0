@@ -114,9 +114,11 @@
 
         if(strpos($url, 'blog') !== false) {
           echo '  <img src="images/icon_star_big_gray2x.png" class="star blog" width="27">';
-        } else {
-                            echo '  <img src="images/icon_star_big_white.png" class="star">';
-                    }
+        } else if(strrpos($url, '/') == strlen($url)-1 || strpos($url, 'index.php') !== false){
+                            echo '  <img src="images/icon_star_big_white.png" class="star" id="home_star">';
+                            }else{
+                              echo '  <img src="images/icon_star_big_white.png" class="star">';
+                            }
                         if(strrpos($url, '/') == strlen($url)-1 || strpos($url, 'index.php') !== false){
                             echo '
                             </td>
