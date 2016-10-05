@@ -46,9 +46,9 @@ function echoFooter($topOffset) {
   </section>
 
   </div>
-    
+
 </main>
-    
+
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
@@ -67,15 +67,15 @@ function echoFooter($topOffset) {
   <![endif]-->
 
   <script>
-     
+
       function draw() {
-        
+
         var canvas = document.getElementById("canvas");
         canvas.width = $(\'#blockquote\').outerWidth();
         canvas.height = $(\'#blockquote\').outerHeight();
         var width = canvas.width;
         var height = canvas.height;
-          
+
         var ctx = canvas.getContext("2d");
         ctx.moveTo(0, 0);
         ctx.lineTo(width, 0);
@@ -99,7 +99,7 @@ function echoFooter($topOffset) {
           canvas.height = $(\'#blockquote-quote\').outerHeight();
           var width = canvas.width;
           var height = canvas.height;
-            
+
           var ctx = canvas.getContext("2d");
           ctx.moveTo(0, 0);
           ctx.lineTo(width, 0);
@@ -114,11 +114,24 @@ function echoFooter($topOffset) {
 
           var offset = $(\'#blockquote-quote\').offset();
           $(\'#canvas-quote\').offset({ top: offset.top, left: offset.left});
-        } 
-      }
+        }
+  }
+
+  function calcHomePage(){
+  var url = window.location.href;
+  var slashIndex = url.lastIndexOf("/");
+  var homeIndex = url.indexOf("index.php");
+
+  if(slashIndex == url.length - 1 || homeIndex != -1){
+    return true;
+  }else{
+    return false;
+  }
+  }
 
       $("#blockquote").attr("style", "opacity:0");
       $(".star").attr("style", "opacity:0");
+      $(".logo-tray-icon-style").attr("style", "opacity:0");
 
       $(window).scroll(function () {
           if ($(window).scrollTop() > $(\'section#top\').height() - ' . $topOffset . ') {
@@ -146,33 +159,51 @@ function echoFooter($topOffset) {
       $( window ).load(function() {
           draw();
           drawQuoteCanvasBorder();
-          fixNewsletterSignupFieldWidth();
+  fixNewsletterSignupFieldWidth();
 
+  var isHomePage = calcHomePage();
+
+  console.log(isHomePage);
+
+  if(isHomePage){
           $("#initial-overlay").fadeOut(800, function() {
-            $(".star").animate({"opacity": "1"}, 300, function() {
+  $(".star").animate({"opacity": "1"}, 300, function() {
+  $(".logo-tray-icon-style").animate({"opacity":"1"}, 300, function(){
               $("canvas").animate({"opacity": "1"}, 300, function() {
                 $("#blockquote").attr("style", "opacity:1");
                 $("#blockquote").addClass("animated pulse");
                 $(".star").addClass("animated pulse");
-              });
+  });
+  });
             });
-          });  
-          $(window).scroll();   
+  });
+  }else{
+    $("#initial-overlay").fadeOut(800, function() {
+  $(".star").animate({"opacity": "1"}, 300, function() {
+               $("canvas").animate({"opacity": "1"}, 300, function() {
+                $("#blockquote").attr("style", "opacity:1");
+                $("#blockquote").addClass("animated pulse");
+                $(".star").addClass("animated pulse");
+   });
+            });
+  });
+  }
+          $(window).scroll();
 
           $(window).keydown(function(event){
             if(event.keyCode == 13) {
               event.preventDefault();
               return false;
             }
-          });      
+          });
       });
-      
+
       $(window).resize(function() {
           draw();
           drawQuoteCanvasBorder();
       });
-      
-      
+
+
 
       var slideout = new Slideout({
         "panel": document.getElementById("panel"),
@@ -223,10 +254,10 @@ function echoFooter($topOffset) {
           .fail(function() {
             alert( "error registring for Share411, please try again." );
           });
-          
+
 
           /* using mailchimp API v2.0 for subscribing user automatically */
-          /* 
+          /*
           var body = "{\'apikey\':\'9a062e6f8140b637dcb7bbde4bb5ea6c-us1\', \'id\':\'6325119ba2\', \'email\':{\'email\':\'";
           body = body + emailAddress;
           body = body + "\'}, \'double_optin\':false }";

@@ -202,6 +202,8 @@ if(function_exists("get_posts")) {
     top: -145px;
     clear: both;
     margin: 0;
+    width: 100px;
+    height: 100px;
         float: none;
         }
      </style>
