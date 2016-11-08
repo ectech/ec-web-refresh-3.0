@@ -206,6 +206,24 @@ if(function_exists("get_posts")) {
     height: 100px;
         float: none;
         }
+
+        @media screen and (max-width: 480px){
+        .logo-tray-icon-style{
+          width: 40px; height:40px;
+        }
+
+        .padded-td{
+        padding-left:0px;
+        padding-right: 5px;
+        }
+
+        .willnotrender {
+          transform: translateZ(0);
+        }
+
+        #home_star{
+        top: -145px !important;
+        }
      </style>
 
    <!-- Footer Section -->
