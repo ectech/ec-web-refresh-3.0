@@ -3,10 +3,28 @@
 header("Cache-Control: no-cache");
 
 $success_msg = "";
-
+$testing = "";
 if(isset($_POST['submitContactForm']))
 {
-
+    // call google to find out if the recaptcha response was successful
+    $recaptcha_user_response = $_POST['recaptcha_user_response'];
+    $postfields = array('secret'=>'6LeEKSQUAAAAAPifxgbcIH5Ejl7rNskADb5dT1sc', 'response'=> $recaptcha_user_response);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    // Edit: prior variable $postFields should be $postfields;
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); // On dev server only!
+    $result = curl_exec($ch);
+    
+    $result_json = json_decode($result);
+    if(!$result_json->success) { // if success is false, quit
+        echo "recaptcha failure";
+        return;
+    }
+    
   $name = $_POST['name'];
   $email = $_POST['email'];
   $phone = $_POST['phone'];
@@ -62,6 +80,7 @@ function validateFormMandatory($name, $email, $message, $subject) {
 <html lang="en">
 <head>
   <title>Contact Us | EC Technology, LLC | Customer-driven software development for government and commercial enterprises.</title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <?php include 'includes/head.php'; ?>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -75,7 +94,7 @@ function validateFormMandatory($name, $email, $message, $subject) {
   <section id="our-clients" class="container-fluid">
       <div class="row">
           <div class="col-lg-12">
-          <h1>Fill out the contact form below and we’ll be in touch.</h1>
+          <h1>Fill out the contact form below and we'll be in touch.</h1>
           <img src="images/separator_flagstripes.png" />
           </div>
           <div class="col-lg-12">
@@ -88,7 +107,9 @@ function validateFormMandatory($name, $email, $message, $subject) {
   <!-- How we see our team? -->
   <section id="contact-form" class="container-fluid">
       <h4 style="color: green; text-align: center;"><?php echo $success_msg; ?></h4>
+
       <form name="contactForm" method="post" action="contact.php" id="form" data-parsley-validate>
+          <input type="hidden" value="" name="recaptcha_user_response" id="recaptcha_user_response" />
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <input type="text" placeholder="Name" name="name" class="col-xs-12" required />
@@ -114,7 +135,8 @@ function validateFormMandatory($name, $email, $message, $subject) {
         </div>
         
         <div class="row">
-            <input type="submit" class="text-uppercase text-center button-box orange" value="Submit" />
+            <button type="submit" class="text-uppercase text-center button-box orange g-recaptcha" data-sitekey="6LeEKSQUAAAAALyS96uZgG0OMpIUXSlRw8s_i04h"
+                    data-callback="submitForm">Submit</button>
         </div>
         <input type="hidden" name="submitContactForm" value="submitted" />
     </form>
@@ -145,5 +167,11 @@ function validateFormMandatory($name, $email, $message, $subject) {
   <!-- Footer Section -->
   <?php include 'includes/footer.php'; echoFooter(800); ?>
 
+    <script>
+    function submitForm(token) {
+        $('input#recaptcha_user_response').val(token);
+        $('form#form').submit();
+    }
+    </script>
 </body>
 </html>
