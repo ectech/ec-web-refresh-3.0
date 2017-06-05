@@ -101,7 +101,7 @@ a.button-underline:hover {
     color: #ccc;
 }
 
-a.button-box, input.button-box {
+a.button-box, input.button-box, button.button-box {
     text-transform: uppercase;
     font-size: 19px;
     font-weight: 700;
@@ -140,8 +140,6 @@ input.orange:hover {
     background-color: #f15c22;
     color: white;
 }
-
-
 
 p {
     font-size: 28px;
@@ -1126,7 +1124,7 @@ section#contact-form {
     color: #455560;
 }
 
-section#contact-form input.button-box {
+section#contact-form button.button-box {
     text-transform: uppercase;
     font-size: 19px;
     font-weight: 700;
@@ -1141,13 +1139,13 @@ section#contact-form input.button-box {
     background-color: transparent;
 }
 
-section#contact-form input.orange {
+section#contact-form button.orange {
     color: #f15c22;
     border-color: #f15c22;
 }
 
 
-section#contact-form input.orange:hover {
+section#contact-form button.orange:hover {
     background-color: #f15c22;
     color: white;
 }
