@@ -40,6 +40,10 @@ a, a:link, a:visited {
     color: white;
 }
 
+#contract .job-post-details a, #contract .job-post-details a:link, #contract .job-post-details a:visited {
+    color: #f15c22;
+}
+
 a:hover {
     text-decoration: underline;
 }
