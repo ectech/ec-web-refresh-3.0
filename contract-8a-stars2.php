@@ -27,16 +27,16 @@
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 text-left job-post-details">
           <div class="job-info-box">
-            <p>
-              With expertise in the areas of information sharing and legacy software modernization, 
-            Evans &amp; Chambers Technology will work in partnership with the General Services 
-            Administration to bring Custom Computing Programming and Design Services to the Federal 
-            Government. Through the 8(a) STARS II GWAC, Federal Government can purchase information 
-            technology (IT) services from a proven 8a company. The 8(a) STARS II GWAC provides 
-            agencies with pre-competed, easy-to-use contracts, access to proven technology providers, 
-            a shortened procurement lead time, and 8(a) socioeconomic credit.
+            <p>With expertise in the areas of information sharing and legacy software modernization,
+                Evans &amp; Chambers Technology will work in partnership with the General Services
+                Administration to bring Custom Computing Programming and Design Services to the
+                Federal Government. Through the <a href="http://www.gsa.gov/8astars2" target="new">
+                8(a) STARS II GWAC</a>, Federal Government can purchase
+                information technology (IT) services from a proven 8(a) company. The 8(a) STARS II
+                GWAC provides agencies with a pre-competed easy-to-use contract that provides access
+                to proven technology companies. The STARS II contract offers mature IT solutions
+                with a shortened procurement lead time and 8(a) socioeconomic credit.
             </p>
-          </div>
 
           <h3>Contract Information</h3>
           <ul>
@@ -74,6 +74,7 @@
             <li>Business Process Reengineering</li>
             <li>Information Assurance</li>
           </ul>
+          <p>For more information, visit the <a href="http://www.gsa.gov/8astars2">GSA 8(a) STARS II website</a></p>
 
           <div class="job-info-box">
             <h3>Contact Information</h3>
